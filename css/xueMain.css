@@ -1,0 +1,370 @@
+@charset "utf-8";
+/*-- Created By
+   ##############               ###############   
+    ##############             ###############    
+    ##############             ##############     
+     ##############           ##############      
+      ##############          #############       
+       #############         ##############       
+        #############       ##############        
+        ##############      #############         
+         ###############################          
+         ###############################          
+        #################################         
+        ##############     ##############         
+       ##############       ##############        
+       ##############        ##############       
+      ##############         #######           
+     ###############          ##############      
+     ##############           ###############     
+    ######      
+    ##############              ##############    
+   ##############               ##############
+          
+                 xuedesign studio 
+             https://www.xuedesign.tw/
+*
+* @project    SKY PV ENERGY Official website
+* @Author     Elmo Woo <hello@xuedesign.tw>
+* @copyright  2019 xuedesign studio
+* @version    v1.0 - 201906
+*
+*=====================================
+* 0.Reset重置
+* 1.通用設定
+* 2.網站結構
+* 3.頁面設定
+*   3-1.首頁
+*   3-2.關於天晶
+*   3-3.太陽能介紹
+*   4-4.案場經驗
+*   4-5.太陽能材料
+*   4-6.聯絡我們
+*   4-7.版權列
+* 4.選單設定
+*   4-1.網站主選單
+*   4-2.行動版選單
+*5.按鈕設定
+*   5-1.返回頂端
+* 6.等待載入動畫
+* 7.Animate
+* 8.自訂scrollbar
+*=====================================
+**/
+
+
+/*
+=====================================
+reset重置
+=====================================
+*/
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700&display=swap");
+
+/*
+=====================================
+通用設定
+=====================================
+*/
+html { font-size:62.5%; scroll-behavior: smooth}
+body{
+	margin: 0;
+	padding:0;
+    background: #fff;
+    background-attachment: fixed;
+    background-size: cover;
+	font-family:"Noto Sans TC", "Microsoft JhengHei","PingFangTC-Regular", "Arial", "Helvetica", sans-serif;
+    font-size: 1rem; /* 1rem=10px */
+	color:#333333}
+/*a:link {text-decoration:none; color:#6F87EB}
+a:visited {text-decoration:none; color:#8c8c8c}
+a:hover {text-decoration:underline; color:#37D0B4}*/
+form{margin:0; padding:0}
+image{border:0}
+.clean{ clear:both}
+.hidden{ display:none}
+
+/*頁面反白設定*/
+::selection { background: #6F87EB; color: #fff}
+::-moz-selection { background: #6F87EB; color: #fff}
+img::selection { background: transparent}
+img::-moz-selection { background: transparent}
+
+
+/*
+=====================================
+全站結構
+=====================================
+*/
+#wrap,
+header,
+#box_banner-index,
+#box_banner-page,
+#box_case,
+footer{ display: block; width: 100%}
+
+header{
+    min-height: 100px}
+header>hr{
+    margin: 0;
+    border: 5px solid #AED06B}
+#hdr-main{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto}
+#hdr-main{ padding-top: 30px}
+
+
+/*
+=====================================
+頁面設定
+=====================================
+*/
+/*首頁*/
+h1 a{
+    display: block;
+    width: 371px;
+    height: 68px;
+    background-image: url(../images/h1.svg);
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+
+
+/*
+=====================================
+選單設定
+=====================================
+*/
+/*網站主選單*/
+#nav_main{
+    display: block;
+    flex: 4}
+#box_lang{
+    display: block;
+    flex: 1}
+
+#nav_main ul,
+#box_lang ul{ 
+    text-align: right;
+    padding-top: 28px}
+#nav_main li,
+#box_lang li{
+    display: inline-block;
+    font-size: 1.8rem;
+    line-height: 2.7rem}
+#nav_main li a,
+#box_lang li a{
+    color: #243788;
+    padding: 0 15px;
+    text-decoration: none}
+#box_lang li a.notyet{ color: #b2b2b2}
+
+/*行動版選單*/
+
+
+/*
+=====================================
+按鈕設定
+=====================================
+*/
+/*返回頂端*/
+#toTop{
+  display:none;
+  text-decoration:none;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  overflow:hidden;
+  width:51px;
+  height:51px;
+  border:none;
+  text-indent:100%;
+  background:url(../images/ui.totop.png) no-repeat left top}
+#toTopHover{
+  background:url(../images/ui.totop.png) no-repeat left -51px;
+  width:51px;
+  height:51px;
+  display:block;
+  overflow:hidden;
+  float:left;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter:alpha(opacity=0)}
+#toTop:active, 
+#toTop:focus {
+  outline:none}
+
+.mybtn,
+.mybtn:visited{
+    display: block;
+    width: 180px;
+    margin: 40px auto 0 auto;
+    padding: 10px 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 2px solid #77bc1f;
+    text-decoration: none}
+.mybtn:hover{
+    color: #fff;
+    text-decoration: none;
+    background: #466d14;
+    transition-duration: .5s}
+/*.mybtn-l{ 
+    width: 160px;
+    padding: 15px 10px}
+.mybtn-m{ 
+    width: 120px;
+    padding: 8px 10px}
+.btn-white{
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 0 0 15px #868686}
+.btn-blue{
+    color: #5e98d4;
+    border-color: #5e98d4}*/
+.btn-white:hover,
+.btn-blue:hover{
+    color: #fff;
+    border-color: #0d4d80;
+    background: #126db4;
+    -webkit-transition: all 0.5s ease 0s;
+    /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;}
+
+@keyframes mousemove {
+    0%   { margin-top: 85px }
+    50%  { margin-top: 100px }
+    100% { margin-top: 84px }
+}
+@-webkit-keyframes mousemove {
+    0%   { margin-top: 85px }
+    50%  { margin-top: 100px }
+    100% { margin-top: 84px }
+}
+
+/*
+=====================================
+等待載入動畫
+=====================================
+*/
+#loading{
+    display:block;
+	max-width:100vw;
+	height:100vh;
+    background:#609b15}
+.spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 -107px;
+    width: 214px;
+    height: 150px;
+    text-align: center}
+.spinner p{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #fff;
+    letter-spacing: 1px}
+@keyframes ld-bounce {
+  0%, 90% {
+    animation-timing-function: linear;
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0, 0.4, 0.6, 1);
+  }
+  50% {
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 0.6);
+  }
+  0% {
+    -webkit-transform: translate(0%, 30%) scaleY(0.5);
+    transform: translate(0%, 30%) scaleY(0.5);
+  }
+  10% {
+    -webkit-transform: translate(0%, 5%) scaleY(1.1);
+    transform: translate(0%, 5%) scaleY(1.1);
+  }
+  50% {
+    -webkit-transform: translate(0%, -37%) scaleY(1.1);
+    transform: translate(0%, -37%) scaleY(1.1);
+  }
+  90% {
+    -webkit-transform: translate(0%, 5%) scaleY(1.1);
+    transform: translate(0%, 5%) scaleY(1.1);
+  }
+  100% {
+    -webkit-transform: translate(0%, 30%) scaleY(0.5);
+    transform: translate(0%, 30%) scaleY(0.5);
+  }
+}
+@-webkit-keyframes ld-bounce {
+  0%, 90% {
+    animation-timing-function: linear;
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0, 0.4, 0.6, 1);
+  }
+  50% {
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 0.6);
+  }
+  0% {
+    -webkit-transform: translate(0%, 30%) scaleY(0.5);
+    transform: translate(0%, 30%) scaleY(0.5);
+  }
+  10% {
+    -webkit-transform: translate(0%, 5%) scaleY(1.1);
+    transform: translate(0%, 5%) scaleY(1.1);
+  }
+  50% {
+    -webkit-transform: translate(0%, -37%) scaleY(1.1);
+    transform: translate(0%, -37%) scaleY(1.1);
+  }
+  90% {
+    -webkit-transform: translate(0%, 5%) scaleY(1.1);
+    transform: translate(0%, 5%) scaleY(1.1);
+  }
+  100% {
+    -webkit-transform: translate(0%, 30%) scaleY(0.5);
+    transform: translate(0%, 30%) scaleY(0.5);
+  }
+}
+.ld.ld-bounce {
+  -webkit-animation: ld-bounce 1s infinite;
+  animation: ld-bounce 1s infinite;
+}
+
+
+/*
+=====================================
+Animate
+=====================================
+*/
+
+/*
+=====================================
+自訂scrollbar
+=====================================
+*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0}
+::-webkit-scrollbar-thumb {
+  background: #6F87EB;
+  border: 0px none #fff;
+  border-radius: 60px;	
+  behavior: url(PIE.htc)}
+::-webkit-scrollbar-thumb:hover {
+  background: #6F87EB}
+::-webkit-scrollbar-track {
+  background: #3f4c84;
+  border: 0px none #fff;
+  border-radius: 0;
+  behavior: url(PIE.htc)}
