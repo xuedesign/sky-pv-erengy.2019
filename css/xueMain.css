@@ -101,7 +101,6 @@ header,
 #hdr-fixed,
 #box_banner-index,
 #box_banner-page,
-#banner-main,
 #banner_slider,
 #box_case,
 footer{ display: block; width: 100%}
@@ -111,7 +110,7 @@ header{ height: 120px}
     position: fixed;
     height: 120px;
     background: #fff;
-    z-index: 99}
+    z-index: 150}
 #hdr-fixed::before{
     display: block;
     content: "";
@@ -125,12 +124,7 @@ header{ height: 120px}
 
 #box_banner-index{
     height: 550px}
-#banner-main{
-    position: relative;
-    padding-top: 25px}
-#banner_slider{
-    height: 500px;
-    background: #e1e1e1}
+#banner_slider{ height: 500px}
 
 
 /*
@@ -148,23 +142,41 @@ h1 a{
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden}
-#banner-main img{
+#box_ban-left{
     display: block;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 50;
     width: 142px;
-    height: 362px}
+    height: 362px;
+    background: url(../images/box_banner-left.svg) no-repeat}
 #sologan{
     display: block;
     position: absolute;
-    top: 25px;
+    top: 15px;
     right: 0;
+    z-index: 50;
     width: 625px;
     height: 540px;
+    text-align: right;
+    padding: 151px 45px 0 0;
     overflow: hidden;
-    background: url(../images/box_banner-right.svg) no-repeat
-}
+    background: url(../images/box_banner-right.svg) no-repeat}
+#sologan h2{
+    font-size: 4.8rem;
+    line-height: 5rem;
+    letter-spacing: 2px;
+    color: #CDF480;
+    margin-left: 200px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E5E5E5}
+#sologan h3{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+    padding-top: 15px;
+    color: #fff}
 
 
 /*
@@ -175,7 +187,7 @@ h1 a{
 /*網站主選單*/
 #nav_main{
     display: block;
-    flex: 4}
+    flex: 3}
 #box_lang{
     display: block;
     flex: 1}
@@ -194,6 +206,14 @@ h1 a{
     color: #243788;
     padding: 0 15px 5px;
     text-decoration: none}
+#box_lang .nowlang a{
+    background: #5a9ed3;
+    color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 0 15px 5px;
+    margin: 0 8px}
 #nav_main li::after,
 #box_lang li::after{
     content: "|";

@@ -1,5 +1,10 @@
-//背景影片
-//loadjs('https://cdn.jsdelivr.net/npm/vide@0.5.1/dist/jquery.vide.min.js');
+//圖片輪播
+loadjs(['css/flexslider.css','script/lib/jquery.flexslider.js'], function() {
+  $(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"});
+  });
+});
 
 //圖片延遲載入
 loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
@@ -7,12 +12,14 @@ loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
     observer.observe();
 });
 
-//返回頂端
-//loadjs(['script/lib/jquery.ui.totop.min.js', 'https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js'], function() {
-//    $(document).ready(function() {
-//	$().UItoTop({ easingType: 'easeOutQuart' });
-//    });
-//});
+//wow載入動畫
+loadjs('script/lib/wow.min.js', function() {
+  new WOW().init();
+});
+
+//Lightbox
+loadjs(['https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css','https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js'], function() {
+});
 
 //行動版選單
 loadjs("script/lib/overlay.modernizr.custom.js");
