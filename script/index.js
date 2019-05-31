@@ -1,3 +1,6 @@
+//Modernizr增強性輔助語法
+loadjs("script/lib/modernizr-custom.js");
+
 //圖片輪播
 loadjs(['css/flexslider.css','script/lib/jquery.flexslider.js'], function() {
   $(window).load(function() {
