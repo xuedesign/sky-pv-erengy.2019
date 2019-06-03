@@ -1,14 +1,6 @@
 //Modernizr增強性輔助語法
 loadjs("script/lib/modernizr-custom.js");
 
-//圖片輪播
-loadjs(['css/flexslider.css','script/lib/jquery.flexslider.js'], function() {
-  $(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"});
-  });
-});
-
 //圖片延遲載入
 loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
     const observer = lozad();
@@ -21,8 +13,8 @@ loadjs('script/lib/wow.min.js', function() {
 });
 
 //Lightbox
-//loadjs(['https://cdn.jsdelivr.net/gh/fancyapps/fancybo//x@3.5.7/dist/jquery.fancybox.min.css','https://cdn.jsd//elivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fanc//ybox.min.js'], function() {
-//});
+loadjs(['https://cdn.jsdelivr.net/gh/fancyapps/fancybo//x@3.5.7/dist/jquery.fancybox.min.css','https://cdn.jsd//elivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fanc//ybox.min.js'], function() {
+});
 
 //行動版選單
 loadjs("script/lib/overlay.modernizr.custom.js");
