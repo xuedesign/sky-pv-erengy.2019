@@ -20,9 +20,12 @@ loadjs('script/lib/wow.min.js', function() {
   new WOW().init();
 });
 
-//Lightbox
-//loadjs(['https://cdn.jsdelivr.net/gh/fancyapps/fancybo//x@3.5.7/dist/jquery.fancybox.min.css','https://cdn.jsd//elivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fanc//ybox.min.js'], function() {
-//});
+//返回頂端
+loadjs(['script/lib/jquery.ui.totop.min.js', 'https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js'], function() {
+    $(document).ready(function() {
+	$().UItoTop({ easingType: 'easeOutQuart' });
+    });
+});
 
 //行動版選單
 loadjs("script/lib/overlay.modernizr.custom.js");

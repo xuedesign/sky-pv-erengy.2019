@@ -36,12 +36,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FW63XH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
+
+<div id="loading">
+    <div class="spinner">
+        <img src="images/logo-foot.svg" class="ld ld-bounce"/>
+        <p>正在載入...</p>
+    </div>
+</div>    
+            
 <div id="wrap">
     <header>
         <div id="hdr-fixed">
             <div id="hdr-main">
                 <h1><a href="index.html" title="返回首頁">天晶光電科技股份有限公司 SKY PV ENERGY Co., Ltd.</a></h1>
+                <a id="trigger-overlay" href="#"><i class="far fa-bars"></i></a>
                 <nav id="nav_main">
                     <ul>
                         <li><a class="hvr-underline" href="about.html">關於天晶</a></li>
@@ -99,13 +107,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <p class="copyright">COPYRIGHT © SKY PV Energy Co., Ltd. ALL RIGHTS RESERVED</p> 
     </footer>
-</div><!--// end #wrap -->    
+</div><!--// end #wrap -->
+
+<!--mobile menu-->
+<div class="overlay overlay-scale">
+    <button type="button" class="overlay-close"><i class="fas fa-times-square"></i></button>
+    <nav>
+        <div class="ilogo"></div>
+        <ul>
+            <li><a class="hvr-overlay" href="about.html">▪ 關於天晶</a></li>
+            <li><a class="hvr-overlay" href="pv-advantage.html">▪ 太陽能介紹</a></li>
+            <li><a class="hvr-overlay" href="projects.html">▪ 案場經驗</a></li>
+            <li><a class="hvr-overlay" href="products.html">▪ 太陽能材料</a></li>
+            <li><a class="hvr-overlay" href="contacts.html">▪ 聯絡我們</a></li>
+        </ul>
+        <div id="box_mlan">
+            <a href="projects.html">中文</a> | <a href="en/projects.html" title="Coming Soon">EN</a>
+        </div>
+    </nav>
+</div>    
 
 <script>document.documentElement.classList.remove("no-js");</script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+<script>jQuery(document).ready(function(){jQuery("#loading").fadeOut(0)});</script>
 <script src="https://cdn.jsdelivr.net/npm/loadjs@3.6.1/dist/loadjs.umd.min.js"></script>
 <script src="script/index.js"></script>
-<!--<script src="https://instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>-->
+<script src="https://instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
 <script type="application/ld+json">
 { 
     "@context" : "https://schema.org",

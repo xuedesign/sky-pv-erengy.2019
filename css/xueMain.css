@@ -119,12 +119,12 @@ header{ height: 120px}
     border: 3px solid #AED06B}
 #hdr-main{
     display: flex;
+    flex-wrap: wrap;
     width: 1280px;
-    margin: 0 auto}
-#hdr-main{ padding-top: 30px}
+    margin: 0 auto;
+    padding-top: 30px}
 
-#box_banner-index{
-    height: 550px}
+#box_banner-index{ height: 550px}
 #banner_slider{ height: 500px}
 #box_banner-pages{ 
     position: relative;
@@ -148,7 +148,7 @@ footer{
     width: 50%;
     height: 75px;
     background: url(../images/bg_footer-deco-right.png) no-repeat;
-    background-position: top right}
+    background-position: bottom right}
 #footer_deco::after{
     content: ".";
     display: block;
@@ -158,7 +158,7 @@ footer{
     height: 0}
 #foot_main{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     padding: 45px 0 30px 0;
@@ -264,6 +264,7 @@ h1 a{
     color: #fff}
 #foot_main h3 a{
     display: block;
+    margin-top: 25px;
     width: 207px;
     height: 107px;
     background: url(../images/logo-foot.svg) no-repeat;
@@ -289,8 +290,6 @@ h1 a{
 .footer_nav li a:hover{
     color: #37D0B4;
     text-decoration: none}
-
-
 
 /*
 =====================================
@@ -369,7 +368,179 @@ h1 a{
 #nav_main a.nowin{ border-bottom: 3px solid #aed06b}
 
 /*行動版選單*/
+#trigger-overlay{ display: none}
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+    z-index: 9999;
+    /*background: #6F87EB*/
+    background: -webkit-gradient(linear, left top, right top, from(#207E9B), to(#7F96E3));
+    background: -webkit-linear-gradient(top, #207E9B, #7F96E3);
+    background: -moz-linear-gradient(top, #207E9B, #7F96E3);
+    background: -o-linear-gradient(top, #207E9B, #7F96E3);
+    background: -ms-linear-gradient(top, #207E9B, #7F96E3);
+    background: linear-gradient(top, #207E9B, #7F96E3);
+    background-color: #207E9B;}
 
+/* Overlay closing cross */
+.overlay .overlay-close{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 19px;
+	top: 13px;
+	overflow: hidden;
+	border: none;
+    background: none;
+    font-size: 5em;
+	/*text-indent: 200%;*/
+	color: rgba(255, 255, 255, .9);
+	outline: none;
+	z-index: 100}
+.overlay .overlay-close:hover{ 
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 40%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)}
+.overlay nav .ilogo{
+    display: block; 
+    width: 50%; 
+    height: 150px;
+    border-bottom: 1px solid #fff;
+    background: url(../images/logo-foot.svg) no-repeat;
+    background-size: 200px 133px;
+    background-position: top center;
+    margin: 0 auto 25px auto}
+#box_mlan{
+    display: block;
+    width: 50%;
+    padding: 20px 0;
+    margin: 0 auto;
+    font-size: 3rem;
+    line-height: 3erm;
+    color: #fff}
+#box_mlan a{
+    padding: 0 15px;
+    color: #fff;
+    text-decoration: none}
+#box_mlan a:hover{
+    color: #37D0B4;
+    text-decoration: none}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 80%;
+	position: relative;
+    text-align: left}
+
+.overlay ul li {
+	display: block;
+	height: 15%;
+	height: calc(100% / 5);
+	min-height: 70px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden}
+
+.overlay ul li a {
+    display: block;
+    font-family: "Noto Sans TC","Microsoft JhengHei","PingFangTC-Regular", "Arial", "Helvetica", sans-serif;
+	font-size: 3.5rem;
+	font-weight: 500;
+    line-height: 4rem;
+    letter-spacing: 2px;
+	color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+	padding-bottom: 10px}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #37D0B4}
+
+/*.sub-overlay li{
+        display: block;
+        float: left;
+        margin: 0 15px;
+        padding: 0}
+.overlay .sub-overlay a:hover{
+        color: rgb(145, 114, 40);
+        background: none}
+.overlay .sub-overlay a:focus{
+        color: rgba(255, 255, 255, .8);
+        background: none}*/
+
+.hvr-overlay{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden}
+.hvr-overlay:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: rgba(119, 189, 31, 1);
+    height: 3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out}
+.hvr-overlay:hover:before, 
+.hvr-overlay:focus:before, 
+.hvr-overlay:active:before{
+    left: 0;
+    right: 0}
+
+/* Effects */
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 30px}
+	.overlay ul li {
+		min-height: 30px}
+}
+@media (max-width: 321px) {
+.overlay ul li{ min-height: 60px}
+.overlay ul li a {
+    font-size: 3rem;
+	font-weight: 500;
+    line-height: 3.5rem}
+}
 
 /*
 =====================================
@@ -464,18 +635,18 @@ h1 a{
     display:block;
 	max-width:100vw;
 	height:100vh;
-    background:#609b15}
+    background:#6F87EB}
 .spinner{
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     margin: 0 -107px;
-    width: 214px;
-    height: 150px;
+    width: 207px;
+    height: 107px;
     text-align: center}
 .spinner p{
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 5rem;
     color: #fff;
     letter-spacing: 1px}
 @keyframes ld-bounce {

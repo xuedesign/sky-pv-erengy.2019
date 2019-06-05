@@ -31,12 +31,43 @@
 *
 **/
 
+@media (max-width:1400px) {
+#box_banner-index{ height: 450px}
+#box_ban-left{
+    width: 103px;
+    height: 262px;
+    background-size: contain}
+#sologan{
+    top: 15px;
+    width: 509px;
+    height: 440px;
+    padding: 151px 45px 0 0;
+    background-size: contain}
+#sologan h2{
+    font-size: 4rem;
+    margin-left: 150px}
+#sologan h3{
+    font-size: 2.5rem}
+
 /*
 =====================================
 平板裝置(寬>長)  for-tablet-landscape-up
 =====================================
 */
 @media (max-width:1110px) { /*1000*/
+header,
+#hdr-fixed{ height: 190px}
+#hdr-main{ width: 95%; margin: 0 auto}
+h1 a{
+    display: block;
+    width: 1000px;
+    height: 68px;
+    background-size: 371px 68px;
+    background-position: top center}
+#nav_main{ flex: 2}
+#box_lang{ flex: 1}
+#deco_left,
+#deco_right{ background-size: contain}    
 
 }
 
@@ -46,6 +77,49 @@
 =====================================
 */
 @media (max-width:800px) { /*750*/
+header,
+#hdr-fixed{ height: 120px}
+h1 a{
+    display: block;
+    flex: 1;
+    width: 371px;
+    height: 68px;
+    background-size: 371px 68px;
+    background-position: top center}
+#nav_main,
+#box_lang{ display: none}
+#trigger-overlay{ 
+    display: block;
+    flex: 1;
+    padding: 15px 30px 0 0;
+    text-align: right;
+    font-size: 3.5rem;
+    color: #243788}   
+#sologan{
+    top: 15px;
+    width: 450px;
+    height: 440px;
+    padding: 151px 45px 0 0;
+    background-size: cover}
+#sologan h2{
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin-left: 150px}
+#sologan h3{
+    font-size: 2.2rem}
+#sologan-pages{
+    width: 340px;
+    height: 224px}
+#sologan-pages h2{ 
+    font-size: 4rem;
+    padding: 73px 15px 0 0}
+    
+#foot_main h3 a{
+    background-size: cover}
+.company_info{
+    width: 55%;
+    padding-left: 50px}
+.footer_nav{ display: none}    
 
 }
 
@@ -55,8 +129,21 @@
 =====================================
 */
 @media (max-width: 600px) { /*573*/
-
-}
+#box_banner-index,
+#banner_slider{ height: 350px}   
+#sologan{
+    top: 15px;
+    width: 350px;
+    height: 320px;
+    padding: 100px 25px 0 0;
+    background-size: cover}
+#sologan h2{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-left: 90px}
+#sologan h3{
+    font-size: 1.8rem}
+#deco_left{ background-position: bottom}
 
 /*
 =====================================
@@ -64,6 +151,80 @@
 =====================================
 */
 @media (max-width: 420px) { /*360*/
+header,
+#hdr-fixed{ height: 100px}
+#hdr-main{ padding-top: 10px}
+#box_banner-index,
+#banner_slider{ height: 230px}
+h1 a{
+    display: block;
+    flex: 1;
+    width: 240px;
+    height: 60px;
+    background-size: 240px 60px;
+    background-position: center 7px}
+#box_ban-left{
+    width: 39px;
+    height: 100px;} 
+#sologan{
+    top: 5px;
+    width: 240px;
+    height: 220px;
+    padding: 60px 8px 0 0}
+#sologan h2{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-left: 50px}
+#sologan h3{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-top: 8px}
+#box_ban-pleft{
+    width: 142px;
+    height: 96px;
+    background-size: contain}
+#box_banner-pages{ 
+    height: 170px}
+#sologan-pages{
+    width: 240px;
+    height: 180px}
+#sologan-pages h2{ 
+    font-size: 3rem;
+    letter-spacing: 0;
+    padding: 73px 5px 0 0}    
+    
+.overlay nav .ilogo{
+    height: 130px;
+    background-size: 180px 120px;
+    margin: 0 auto 15px auto}
+#box_mlan{
+    padding: 30px 0;
+    font-size: 2.2rem;
+    line-height: 5erm}
+.overlay ul li a {
+    font-size: 3rem;
+	line-height: 3rem}
+#foot_main{ padding: 25px 0 10px 0;}
+#foot_main h3 a{
+    margin-top: 0;
+    width: 360px;
+    background-position:  top center;
+    background-size: 180px 93px }
+.company_info{
+    width: 360px;
+    padding: 10px 20px 0}
+.copyright{
+    display: block;
+    width: 90%;
+    margin: 0 auto}
+.slogan{
+    font-size: 1.6rem;
+    line-height: 2rem}
+#sologan h2{
+    letter-spacing: 1px;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-left: 55px}
 
 }
 
@@ -73,7 +234,44 @@
 =====================================
 */
 @media (max-width: 321px) { /*300*/
-
+header,
+#hdr-fixed{ height: 80px}
+#hdr-main{ padding-top: 5px}
+#box_banner-index,
+#banner_slider{ height: 200px}
+h1 a{
+    display: block;
+    flex: 1;
+    width: 200px;
+    height: 55px;
+    background-size: 200px 55px;
+    background-position: center 5px}
+#sologan{
+    top: 5px;
+    width: 240px;
+    height: 190px;
+    padding: 40px 8px 0 0}
+.slogan{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0}
+#foot_main h3 a{ width: 300px}
+.overlay nav .ilogo{
+    height: 115px;
+    background-size: 160px 107px;
+    margin: 0 auto 15px auto}
+#box_banner-pages{ 
+    height: 150px}
+#box_ban-pleft{
+    width: 122px;
+    height: 86px}
+#sologan-pages{
+    width: 240px;
+    height: 160px}
+#sologan-pages h2{ 
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    padding: 60px 10px 0 0}   
 }
 
 
