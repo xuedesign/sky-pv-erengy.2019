@@ -1,6 +1,9 @@
 //Modernizr增強性輔助語法
 loadjs("script/lib/modernizr-custom.js");
 
+//Fontawesome 網頁圖標
+loadjs("https://kit.fontawesome.com/daece105d8.js");
+
 //圖片延遲載入
 loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
     const observer = lozad();

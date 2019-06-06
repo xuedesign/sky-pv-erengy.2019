@@ -36,11 +36,6 @@
 * 3.頁面設定
 *   3-1.首頁
 *   3-2.版權列
-*   3-3.關於天晶
-*   3-4.太陽能介紹
-*   3-5.案場經驗
-*   3-6.太陽能材料
-*   3-7.聯絡我們
 * 4.選單設定
 *   4-1.網站主選單
 *   4-2.行動版選單
@@ -169,7 +164,7 @@ footer{
 頁面設定
 =====================================
 */
-/*首頁*/
+/*頁首*/
 h1 a{
     display: block;
     width: 371px;
@@ -236,10 +231,10 @@ h1 a{
     line-height: 3rem;
     padding-top: 15px;
     color: #fff}
-.bg_projects{
+.webp .bg_projects{
     background: url(../images/banner_project.webp) no-repeat;
     background-position: center 8px}
-.no-js .bg_projects{
+.no-webp .bg_projects{
     background: url(../images/banner_project.jpg) no-repeat;
     background-position: center 8px}
 
@@ -468,19 +463,6 @@ h1 a{
 .overlay ul li a:hover,
 .overlay ul li a:focus {
 	color: #37D0B4}
-
-/*.sub-overlay li{
-        display: block;
-        float: left;
-        margin: 0 15px;
-        padding: 0}
-.overlay .sub-overlay a:hover{
-        color: rgb(145, 114, 40);
-        background: none}
-.overlay .sub-overlay a:focus{
-        color: rgba(255, 255, 255, .8);
-        background: none}*/
-
 .hvr-overlay{
     display: inline-block;
     vertical-align: middle;
@@ -577,34 +559,34 @@ h1 a{
 .mybtn,
 .mybtn:visited{
     display: block;
-    width: 180px;
-    margin: 40px auto 0 auto;
     padding: 10px 5px;
-    font-size: 1.6rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 400;
     line-height: 2.2rem;
     letter-spacing: 1px;
+    color: #fff;
     text-align: center;
-    border: 2px solid #77bc1f;
-    text-decoration: none}
-.mybtn:hover{
-    color: #fff;
     text-decoration: none;
-    background: #466d14;
+    background: linear-gradient(180deg, #37D0B4 0%, rgba(111, 135, 235, 0.8) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    opacity: .8
+}
+.mybtn:hover{
+    opacity: 1;
+    text-decoration: none;
     transition-duration: .5s}
-/*.mybtn-l{ 
-    width: 160px;
+.btn-l{ 
+    width: 173px;
     padding: 15px 10px}
-.mybtn-m{ 
+.btn-m{ 
     width: 120px;
-    padding: 8px 10px}
-.btn-white{
-    color: #fff;
-    border-color: #fff;
-    text-shadow: 0 0 15px #868686}
+    padding: 15px 10px}
+.btn-center{
+    margin: 30px auto}
 .btn-blue{
     color: #5e98d4;
-    border-color: #5e98d4}*/
+    border-color: #5e98d4}
 .btn-white:hover,
 .btn-blue:hover{
     color: #fff;
