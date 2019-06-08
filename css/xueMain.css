@@ -231,12 +231,6 @@ h1 a{
     line-height: 3rem;
     padding-top: 15px;
     color: #fff}
-.webp .bg_projects{
-    background: url(../images/banner_project.webp) no-repeat;
-    background-position: center 8px}
-.no-webp .bg_projects{
-    background: url(../images/banner_project.jpg) no-repeat;
-    background-position: center 8px}
 
 
 /*版權列*/

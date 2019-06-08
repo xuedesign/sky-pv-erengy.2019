@@ -40,15 +40,20 @@
 *=====================================
 **/
 
-#box_service{
+#box_service,
+#container{
     display: block;
     width: 1100px;
     padding: 50px 0;
     margin: 0 auto
 }
-#box_case{
+#box_case,
+#bar_cookie,
+#page_main{
     display: block;
-    width: 100%;
+    width: 100%
+}
+#box_case{
     margin-bottom: 30px;
     background: rgba(213, 220, 230, 0.6);
     overflow: hidden
@@ -62,6 +67,25 @@
     height: 0
 }
 
+.webp .bg_about{
+    background: url(../images/banner_about.webp) no-repeat;
+    background-position: center 8px}
+.no-webp .bg_about{
+    background: url(../images/banner_about.jpg) no-repeat;
+    background-position: center 8px}
+.webp .bg_projects{
+    background: url(../images/banner_project.webp) no-repeat;
+    background-position: center 8px}
+.no-webp .bg_projects{
+    background: url(../images/banner_project.jpg) no-repeat;
+    background-position: center 8px}
+.webp .bg_contact{
+    background: url(../images/banner_contact.webp) no-repeat;
+    background-position: center 8px}
+.no-webp .bg_contact{
+    background: url(../images/banner_contact.jpg) no-repeat;
+    background-position: center 8px}
+
 /*
 =====================================
 首頁
@@ -74,8 +98,7 @@
     font-weight: 400;
     line-height: 6rem;
     color: #243788;
-    border-bottom: 1px solid #243788
-}
+    border-bottom: 1px solid #243788}
 #box_case h4{ 
     line-height: 3.5rem;
     padding-bottom: 20px
@@ -162,6 +185,80 @@
 關於天晶
 =====================================
 */
+#bar_cookie{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: right;
+    color: #848383
+}
+#bar_cookie a,
+#bar_cookie a:visited{
+    color: #848383;
+    text-decoration: none;
+}
+#bar_cookie a:hover{
+    color: #37D0B4;
+    text-decoration: underline
+}
+#bar_cookie a::before{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/icon_index-title.svg) no-repeat;
+    background-size: 14px 14px;
+    padding-right: 8px
+}
+
+#page_main h3{
+    font-size: 3rem;
+    line-height: 5rem;
+    color: #243788
+}
+#page_main h3::before{
+    content: "";
+    display: inline-block;
+    width: 51px;
+    height: 60px;
+    background: url(../images/icon_page-title.svg) no-repeat;
+    background-position: 0 25px;
+    background-size: 40px 40px;
+    padding-right: 0
+}
+#box_about,
+#box_contact{
+    display: block;
+    float: left;
+    width: 54%
+}
+#about_pic,
+#mymap{
+    display: block;
+    float: right;
+    width: 45%
+}
+#page_main::after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+.company_list{
+    display: block;
+    width: 100%;
+    padding: 0 40px 20px 60px
+}
+.company_list li{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #5a5a5a;
+    padding: 10px 0;
+    border-bottom: 1px dashed #b4b4b4
+}
+
+
 
 /*
 =====================================
@@ -186,7 +283,18 @@
 聯絡我們
 =====================================
 */
-
+#box_contact a,
+#box_contact a:visited{
+    color: #5a5a5a;
+    text-decoration: underline
+}
+#box_contact a:hover{
+    color: #37d0b4;
+    text-decoration: none
+}
+#mymap{
+    height: 500px;
+}
 /*
 =====================================
 錯誤頁面
