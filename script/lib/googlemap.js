@@ -1,11 +1,11 @@
 function initMap() {
-        var myLatLng = {lat: 25.0606727, lng: 121.4605951};
+        var myLatLng = {lat: 25.060454, lng: 121.462737};
 
         // Create a map object and specify the DOM element for display.
         var map = new google.maps.Map(document.getElementById('mymap'), {
           center: myLatLng,
           scrollwheel: false,
-          zoom: 17,
+          zoom: 16,
           styles: [
   {
     "elementType": "geometry",
@@ -264,7 +264,7 @@ function initMap() {
             position: myLatLng,
             title: '天晶光電科技股份有限公司',
             icon: {
-		      url: "../images/icon-maker96.png",
-		      scaledSize: new google.maps.Size(48, 48)}
+		      url: "../images/map-icon.svg",
+		      scaledSize: new google.maps.Size(80, 80)}
         });
       }
