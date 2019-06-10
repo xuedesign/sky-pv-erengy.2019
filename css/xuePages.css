@@ -49,7 +49,8 @@
 }
 #box_case,
 #bar_cookie,
-#page_main{
+#page_main,
+#box_advantage{
     display: block;
     width: 100%
 }
@@ -57,6 +58,11 @@
     margin-bottom: 30px;
     background: rgba(213, 220, 230, 0.6);
     overflow: hidden
+}
+#box_advantage{
+    margin-top: 30px;
+    height: 500px;
+    position: relative;
 }
 
 .webp .bg_about{
@@ -77,6 +83,14 @@
 .no-webp .bg_contact{
     background: url(../images/banner_contact.jpg) no-repeat;
     background-position: center 8px}
+.webp .bg_advantage{
+    background: url(../images/banner_advantage.webp) no-repeat;
+    background-position: center 8px
+}
+.no-webp .bg_advantage{
+    background: url(../images/banner_about.jpg) no-repeat;
+    background-position: center 8px
+}
 
 #box_case::after,
 #page_main::after,
@@ -250,7 +264,8 @@
     width: 100%;
     padding: 0 40px 20px 60px
 }
-.company_list li{
+.company_list li,
+.advantage_list li{
     font-size: 1.8rem;
     line-height: 2.5rem;
     color: #5a5a5a;
@@ -263,6 +278,73 @@
 太陽能介紹
 =====================================
 */
+#box_pv{
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center
+}
+#box_pv a,
+#box_pv a:visited{
+    display: inline-block;
+    background: #e1e1e1;
+    padding: 8px 20px;
+    margin: 0 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: #5a5a5a;
+    text-decoration: none;
+    transition-duration: .5s
+}
+#box_pv a:hover,
+#box_pv .nowat{
+    color: #fff;
+    text-decoration: none;
+    background: #5a9ed3
+}
+.advantage_list{
+    display: block;
+    padding: 0 0 20px 60px
+}
+.advantage_list strong{
+    color: #d83434
+}
+#box_advantage img,
+#box_advantage p{
+    display: block;
+    position: absolute;    
+}
+#box_advantage img{
+    width: 700px;
+    height: 467px;
+    top:0;
+    left: 60px;
+    z-index: 10
+}
+#box_advantage p{
+    width: 500px;
+    height: 400px;
+    padding: 150px 15px 0 180px;
+    bottom: 0;
+    right: 0;
+    background: rgba(109,145,213,.3);
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-align: justify; 
+}
+#box_advantage span{
+    font-size: 1.3rem}
+#box_advantage span a{
+    color: #243788;
+    text-decoration: underline
+}
+#box_advantage span a:hover{
+    color: #37d0b4;
+    text-decoration: underline
+}
 
 /*
 =====================================
