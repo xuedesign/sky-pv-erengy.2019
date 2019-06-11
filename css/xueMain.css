@@ -324,7 +324,9 @@ h1 a{
 #box_lang li:last-child::after{
     content: ""}
 #box_lang li:first-child::after{ padding: 0}
-#box_lang li a.notyet{ color: #b2b2b2}
+#box_lang li a.notyet{ 
+    color: #b2b2b2;
+    cursor: not-allowed}
 
 .hvr-underline{
   display: inline-block;

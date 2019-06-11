@@ -91,10 +91,20 @@
     background: url(../images/banner_about.jpg) no-repeat;
     background-position: center 8px
 }
+.webp .bg_products{
+    background: url(../images/banner_products.webp) no-repeat;
+    background-position: center 8px
+}
+.no-webp .bg_products{
+    background: url(../images/banner_products.jpg) no-repeat;
+    background-position: center 8px
+}
+
 
 #box_case::after,
 #page_main::after,
-#list_projects li::after{
+#list_projects li::after,
+.info_big::after{
     content: ".";
     display: block;
     clear: both;
@@ -242,7 +252,7 @@
     padding-right: 0
 }
 #page_main p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 3rem;
     color: #5a5a5a;
     padding-left: 50px
@@ -327,7 +337,7 @@
 #box_advantage p{
     width: 500px;
     height: 400px;
-    padding: 150px 15px 0 180px;
+    padding: 130px 15px 0 180px;
     bottom: 0;
     right: 0;
     background: rgba(109,145,213,.3);
@@ -336,6 +346,7 @@
     text-align: justify; 
 }
 #box_advantage span{
+    display: block;
     font-size: 1.3rem}
 #box_advantage span a{
     color: #243788;
@@ -344,6 +355,75 @@
 #box_advantage span a:hover{
     color: #37d0b4;
     text-decoration: underline
+}
+#system_list-top{  display: block}
+#system_list-down{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+#system_list-top,
+#system_list-down{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px
+}
+.info_big{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px
+}
+.info_small{
+    display: inline-block;
+    flex: 4;
+    width: 23%;
+    margin: 0 15px 30px;
+    vertical-align: top
+}
+.info_big h4,
+.info_small h4{
+    font-size: 2.2rem;
+    line-height: 4rem;
+    letter-spacing: 1px;
+    color: #5a5a5a
+}
+.info_big img{
+    display: block;
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #e1e1e1
+}
+.info_small img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #e1e1e1
+}
+#page_main .info_small p{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 0 0;
+    line-height: 2rem
+}
+#page_main .info_big p{ padding-left: 0}
+#page_main .info_big p,
+.info_big ul{
+    display: block;
+    float: right;
+    width: 65%;
+    line-height: 2rem
+}
+.info_big ul{ 
+    padding: 20px 0 0 25px}
+.info_big li{
+    list-style: disc;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #5a5a5a;
+    padding: 5px 0;
+    border-bottom: 1px dashed #b4b4b4    
 }
 
 /*
@@ -395,6 +475,9 @@
 #list_projects .list-right a{
     border: 1px solid #e1e1e1
 }
+#list_projects li img{
+    transform:scale(1,1);transition: all .5s ease-out}
+#list_projects li img:hover{transform:scale(1.1,1.1)}
 
 
 /*
@@ -402,6 +485,50 @@
 太陽能材料
 =====================================
 */
+#list_metals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto 0 auto
+}
+#list_metals li{
+    display: block;
+    position: relative;
+    flex: 5;
+    text-align: center;
+    margin: 0 15px
+}
+#list_metals li::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: -27px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon_arrow.svg) no-repeat;
+    opacity: .5
+}
+#list_metals li:nth-child(5)::after{
+    display: none
+}
+#list_metals img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto
+}
+#list_metals p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 0 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #5a5a5a;
+    line-height: 2.4rem
+}
 
 /*
 =====================================

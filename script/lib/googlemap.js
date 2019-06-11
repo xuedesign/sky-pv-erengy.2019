@@ -264,7 +264,7 @@ function initMap() {
             position: myLatLng,
             title: '天晶光電科技股份有限公司',
             icon: {
-		      url: "../images/map-icon.svg",
-		      scaledSize: new google.maps.Size(80, 80)}
+		      url: "https://www.spvenergy.com/images/map-icon.svg",
+		      scaledSize: new google.maps.Size(80, 64)}
         });
       }

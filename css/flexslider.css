@@ -53,11 +53,17 @@ html[xmlns] .slides {display: block;}
 .flexslider .slides li.ban-03{
     background-position: top center;
     background-size: contain}
-.flexslider .slides li.ban-01{
+.webp .flexslider .slides li.ban-01{
+    background: url(../images/banner-index-01.webp) no-repeat}
+.webp .flexslider .slides li.ban-02{
+    background: url(../images/banner-index-02.webp) no-repeat}
+.webp .flexslider .slides li.ban-03{
+    background: url(../images/banner-index-03.webp) no-repeat}
+.no-webp .flexslider .slides li.ban-01{
     background: url(../images/banner-index-01.jpg) no-repeat}
-.flexslider .slides li.ban-02{
+.no-webp .flexslider .slides li.ban-02{
     background: url(../images/banner-index-02.jpg) no-repeat}
-.flexslider .slides li.ban-03{
+.no-webp .flexslider .slides li.ban-03{
     background: url(../images/banner-index-03.jpg) no-repeat}
 
 

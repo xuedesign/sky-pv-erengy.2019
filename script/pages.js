@@ -18,6 +18,13 @@ loadjs('script/lib/wow.min.js', function() {
   new WOW().init();
 });
 
+//返回頂端
+loadjs(['script/lib/jquery.ui.totop.min.js', 'https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js'], function() {
+    $(document).ready(function() {
+	$().UItoTop({ easingType: 'easeOutQuart' });
+    });
+});
+
 //Lightbox
 loadjs(['https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css','https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js'], function() {
 });
