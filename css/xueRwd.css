@@ -71,6 +71,12 @@ h1 a{
 
 #box_service,
 #container{ width: 100%}
+#bar_cookie,
+#page_main,
+#box_advantage{
+    width: 90%;
+    margin: 0 auto
+}    
 #box_service h4,
 #box_case h4{ margin: 0 50px}
 #case_text p{ padding: 20px 50px 0}    
@@ -79,7 +85,34 @@ h1 a{
     height: 425px;
     padding: 80px 20px}
 #case_pic{ width: 41%}
-
+#box_about,
+#about_pic{
+    float: none;
+    width: 100%}
+    
+#box_advantage{
+    display: block;
+    position: static;
+    height: 650px;
+    padding-bottom: 50px}
+#box_advantage img,
+#box_advantage p{
+    display: block;
+    position: static;    
+}    
+#box_advantage img{
+    width: 100%;
+    height: auto;
+    margin: 20px auto}
+#box_advantage p{
+    background: none;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    padding: 0}
+.info_big img{
+    width: 250px;
+    height: auto}
 }
 
 /*
@@ -136,34 +169,40 @@ h1 a{
 .item_service{
     width: 90%;
     margin: 0 auto;
-    padding: 50px 0 30px
-}
+    padding: 50px 0 30px}
 .item_service li{ padding-top: 140px}
 .item_service li:nth-child(1){
     background: url(../images/icon_service-01.svg) no-repeat;
     background-size: 120px 120px;
-    background-position: top center
-}
+    background-position: top center}
 .item_service li:nth-child(2){
     background: url(../images/icon_service-02.svg) no-repeat;
     background-size: 120px 120px;
-    background-position: top center
-}
+    background-position: top center}
 .item_service li:nth-child(3){
     background: url(../images/icon_service-03.svg) no-repeat;
     background-size: 120px 120px;
-    background-position: top center
-}
+    background-position: top center}
 .item_service li:nth-child(4){
     background: url(../images/icon_service-04.svg) no-repeat;
     background-size: 120px 120px;
-    background-position: top center
-}
+    background-position: top center}
 #case_text{
     width: 73%;
     height: 425px;
     padding: 70px 20px}
-#case_pic{ width: 26%}    
+#case_pic{ width: 26%}
+#box_pv{ width: 90%}
+#box_advantage{ height: 550px}    
+#page_main h3{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-indent: -52px;
+    padding-left: 60px}
+.info_big img{
+    width: 200px;
+    height: auto}
+    
 }
 
 /*
@@ -196,6 +235,25 @@ h1 a{
 #box_case h4{ font-size: 2.5rem}    
 #case_text p{ 
     padding: 20px 30px 0}
+#box_advantage{ height: 450px}
+#box_pv{ width: 100%}    
+#box_pv a,
+#box_pv a:visited{
+    padding: 8px 15px;
+    margin: 0 5px}
+.info_big img{
+    float: none;
+    width: 300px;
+    height: auto;
+    margin: 0 auto 20px}
+#page_main .info_big p,
+.info_big ul{
+    float: none;
+    width: 100%}
+.info_small{ flex: 35%}
+    
+}
+    
 /*
 =====================================
 手機(5"以上大螢幕) for-phone-only
@@ -205,6 +263,8 @@ h1 a{
 header,
 #hdr-fixed{ height: 100px}
 #hdr-main{ padding-top: 10px}
+#container{ padding-bottom: 0}    
+    
 #box_banner-index,
 #banner_slider{ height: 230px}
 h1 a{
@@ -280,6 +340,7 @@ h1 a{
 #box_service h4,
 #box_case h4{ 
     font-size: 2.5rem;
+    line-height: 3.75rem;
     margin: 0 20px}
 #box_service h4::after,
 #box_service h4::before{ margin: 0 5px}
@@ -297,24 +358,20 @@ h1 a{
     background: url(../images/icon_service-01.svg) no-repeat;
     background-size: 140px 140px;
     background-position: top center;
-    margin-bottom: 30px
-}
+    margin-bottom: 30px}
 .item_service li:nth-child(2){
     background: url(../images/icon_service-02.svg) no-repeat;
     background-size: 140px 140px;
     background-position: top center;
-    margin-bottom: 30px
-}
+    margin-bottom: 30px}
 .item_service li:nth-child(3){
     background: url(../images/icon_service-03.svg) no-repeat;
     background-size: 140px 140px;
-    background-position: top center
-}
+    background-position: top center}
 .item_service li:nth-child(4){
     background: url(../images/icon_service-04.svg) no-repeat;
     background-size: 140px 140px;
-    background-position: top center
-}
+    background-position: top center}
 #case_text,
 #case_pic{ 
     float: none;
@@ -324,8 +381,20 @@ h1 a{
     height: auto}
 #case_text{
     height: 350px;
-    padding: 30px 0        
-}    
+    padding: 30px 0}
+.company_list{
+    padding: 0 10px 20px 20px}
+#box_advantage{ height: 350px}
+#box_pv{ 
+    width: 100%;
+    margin-bottom: 0}    
+#box_pv a,
+#box_pv a:visited{
+    padding: 8px 20px;
+    margin: 0 5px 20px}
+.advantage_list{ padding: 0 0 0 20px}
+#system_list-down{ padding-top: 0}
+.info_small{ flex: 50%; margin-bottom: 20px}    
 
 }
 
@@ -376,7 +445,9 @@ h1 a{
 
 #box_case{ margin-bottom: 0}
 #box_service h4,
-#box_case h4{ font-size: 2.3rem}
+#box_case h4{ 
+    font-size: 2.3rem;
+    line-height: 3.45rem}
 #box_case h4{ margin: 0 40px}    
 .item_service li{
     flex: 100%;
@@ -385,13 +456,14 @@ h1 a{
     background: url(../images/icon_service-03.svg) no-repeat;
     background-size: 140px 140px;
     background-position: top center;
-    margin-bottom: 30px
-}
+    margin-bottom: 30px}
 #case_text{
     height: 420px;
-    padding: 30px 0        
-}     
-   
+    padding: 30px 0}     
+.info_big img{
+    width: 250px;
+    height: auto}
+    
 }
 
 

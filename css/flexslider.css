@@ -45,26 +45,41 @@ html[xmlns] .slides {display: block;}
 .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 500px;}
 .flexslider .slides {zoom: 1;}
-.flexslider .slides li{ display:none; width:100%; height:500px}
-.flexslider .slides li a{display:block;width:100%; height:500px}
+.flexslider .slides li{ 
+    display:none; 
+    width:100%; 
+    height:500px;
+    background: #e1e1e1}
+.flexslider .slides li a{
+    display:block; 
+    width:100%; 
+    height:500px;
+    background: #e1e1e1}
 .carousel li {margin-right: 5px}
-.flexslider .slides li.ban-01,
-.flexslider .slides li.ban-02,
-.flexslider .slides li.ban-03{
-    background-position: top center;
-    background-size: contain}
 .webp .flexslider .slides li.ban-01{
-    background: url(../images/banner-index-01.webp) no-repeat}
+    background: url(../images/banner-index-01.webp) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
 .webp .flexslider .slides li.ban-02{
-    background: url(../images/banner-index-02.webp) no-repeat}
+    background: url(../images/banner-index-02.webp) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
 .webp .flexslider .slides li.ban-03{
-    background: url(../images/banner-index-03.webp) no-repeat}
+    background: url(../images/banner-index-03.webp) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
 .no-webp .flexslider .slides li.ban-01{
-    background: url(../images/banner-index-01.jpg) no-repeat}
+    background: url(../images/banner-index-01.jpg) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
 .no-webp .flexslider .slides li.ban-02{
-    background: url(../images/banner-index-02.jpg) no-repeat}
+    background: url(../images/banner-index-02.jpg) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
 .no-webp .flexslider .slides li.ban-03{
-    background: url(../images/banner-index-03.jpg) no-repeat}
+    background: url(../images/banner-index-03.jpg) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
 
 
 /* Direction Nav */
