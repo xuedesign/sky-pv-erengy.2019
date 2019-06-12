@@ -67,7 +67,18 @@ h1 a{
 #nav_main{ flex: 2}
 #box_lang{ flex: 1}
 #deco_left,
-#deco_right{ background-size: contain}    
+#deco_right{ background-size: contain}
+
+#box_service,
+#container{ width: 100%}
+#box_service h4,
+#box_case h4{ margin: 0 50px}
+#case_text p{ padding: 20px 50px 0}    
+#case_text{
+    width: 58%;
+    height: 425px;
+    padding: 80px 20px}
+#case_pic{ width: 41%}
 
 }
 
@@ -121,6 +132,38 @@ h1 a{
     padding-left: 50px}
 .footer_nav{ display: none}    
 
+#box_service{ padding: 30px 0 10px}
+.item_service{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 30px
+}
+.item_service li{ padding-top: 140px}
+.item_service li:nth-child(1){
+    background: url(../images/icon_service-01.svg) no-repeat;
+    background-size: 120px 120px;
+    background-position: top center
+}
+.item_service li:nth-child(2){
+    background: url(../images/icon_service-02.svg) no-repeat;
+    background-size: 120px 120px;
+    background-position: top center
+}
+.item_service li:nth-child(3){
+    background: url(../images/icon_service-03.svg) no-repeat;
+    background-size: 120px 120px;
+    background-position: top center
+}
+.item_service li:nth-child(4){
+    background: url(../images/icon_service-04.svg) no-repeat;
+    background-size: 120px 120px;
+    background-position: top center
+}
+#case_text{
+    width: 73%;
+    height: 425px;
+    padding: 70px 20px}
+#case_pic{ width: 26%}    
 }
 
 /*
@@ -144,7 +187,15 @@ h1 a{
 #sologan h3{
     font-size: 1.8rem}
 #deco_left{ background-position: bottom}
-
+    
+#case_text{
+    width: 69%;
+    height: 425px;
+    padding: 60px 0}
+#case_pic{ width: 30%}
+#box_case h4{ font-size: 2.5rem}    
+#case_text p{ 
+    padding: 20px 30px 0}
 /*
 =====================================
 手機(5"以上大螢幕) for-phone-only
@@ -225,6 +276,56 @@ h1 a{
     font-size: 2rem;
     line-height: 2rem;
     margin-left: 55px}
+    
+#box_service h4,
+#box_case h4{ 
+    font-size: 2.5rem;
+    margin: 0 20px}
+#box_service h4::after,
+#box_service h4::before{ margin: 0 5px}
+#box_service p,
+#case_text p{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #5A5A5A;
+    text-align: center;   
+}
+.item_service li{
+    flex: 50%;
+    padding-top: 160px}
+.item_service li:nth-child(1){
+    background: url(../images/icon_service-01.svg) no-repeat;
+    background-size: 140px 140px;
+    background-position: top center;
+    margin-bottom: 30px
+}
+.item_service li:nth-child(2){
+    background: url(../images/icon_service-02.svg) no-repeat;
+    background-size: 140px 140px;
+    background-position: top center;
+    margin-bottom: 30px
+}
+.item_service li:nth-child(3){
+    background: url(../images/icon_service-03.svg) no-repeat;
+    background-size: 140px 140px;
+    background-position: top center
+}
+.item_service li:nth-child(4){
+    background: url(../images/icon_service-04.svg) no-repeat;
+    background-size: 140px 140px;
+    background-position: top center
+}
+#case_text,
+#case_pic{ 
+    float: none;
+    width: 100%}
+#case_pic img{
+    width: 100%;
+    height: auto}
+#case_text{
+    height: 350px;
+    padding: 30px 0        
+}    
 
 }
 
@@ -271,7 +372,26 @@ h1 a{
 #sologan-pages h2{ 
     font-size: 2.4rem;
     letter-spacing: 0;
-    padding: 60px 10px 0 0}   
+    padding: 60px 10px 0 0}
+
+#box_case{ margin-bottom: 0}
+#box_service h4,
+#box_case h4{ font-size: 2.3rem}
+#box_case h4{ margin: 0 40px}    
+.item_service li{
+    flex: 100%;
+    padding-top: 160px}
+.item_service li:nth-child(3){
+    background: url(../images/icon_service-03.svg) no-repeat;
+    background-size: 140px 140px;
+    background-position: top center;
+    margin-bottom: 30px
+}
+#case_text{
+    height: 420px;
+    padding: 30px 0        
+}     
+   
 }
 
 

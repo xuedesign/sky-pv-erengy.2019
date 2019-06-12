@@ -45,7 +45,11 @@ html[xmlns] .slides {display: block;}
 .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 500px;}
 .flexslider .slides {zoom: 1;}
-.flexslider .slides li{ display:none; width:100%; height:500px}
+.flexslider .slides li{ 
+    display:none; 
+    width:100%; 
+    height:500px;
+background: #e1e1e1}
 .flexslider .slides li a{display:block;width:100%; height:500px}
 .carousel li {margin-right: 5px}
 .flexslider .slides li.ban-01,
@@ -100,7 +104,7 @@ html[xmlns] .slides {display: block;}
 .flexslider .slides li.ban-01,
 .flexslider .slides li.ban-02,
 .flexslider .slides li.ban-03{
-    background-size: 150%;
+    background-size: 100%;
     background-position: top center}
 .flexslider .slides li,
 .flexslider .slides li a{ height: 400px}    
@@ -111,7 +115,7 @@ html[xmlns] .slides {display: block;}
 .flexslider .slides li.ban-01,
 .flexslider .slides li.ban-02,
 .flexslider .slides li.ban-03{
-    background-size: 200%;
+    background-size: 100%;
     background-position: top center}
 .flex-control-nav { width: 40%}
 }
@@ -120,13 +124,37 @@ html[xmlns] .slides {display: block;}
 .flexslider .slides li{ 
     height:400px}
 .flex-control-nav { width: 45%}
+.webp .flexslider .slides li.ban-01{
+    background: url(../images/banner-index-01.webp) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
+.webp .flexslider .slides li.ban-02{
+    background: url(../images/banner-index-02.webp) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
+.webp .flexslider .slides li.ban-03{
+    background: url(../images/banner-index-03.webp) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
+.no-webp .flexslider .slides li.ban-01{
+    background: url(../images/banner-index-01.jpg) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
+.no-webp .flexslider .slides li.ban-02{
+    background: url(../images/banner-index-02.jpg) no-repeat;
+    background-position: bottom center;
+    background-size: cover}
+.no-webp .flexslider .slides li.ban-03{
+    background: url(../images/banner-index-03.jpg) no-repeat;
+    background-position: bottom center;
+    background-size: cover}  
 }
 
 @media (max-width: 600px) { 
 .flexslider .slides li{ height:316px}
 .flexslider .slides li,
 .flexslider .slides li a{ height: 300px} 
-.flex-control-nav { width: 48%; bottom: 50px;}
+.flex-control-nav { width: 48%; bottom: 50px} 
 }
 
 @media (max-width: 420px) {
