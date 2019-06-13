@@ -14,8 +14,10 @@ loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
 });
 
 //wow載入動畫
-loadjs('script/lib/wow.min.js', function() {
-  new WOW().init();
+loadjs('https://cdn.jsdelivr.net/npm/wow.js@1.2.2/dist/wow.min.js', function() {
+  new WOW(
+   { offset: 10}
+  ).init();
 });
 
 //返回頂端

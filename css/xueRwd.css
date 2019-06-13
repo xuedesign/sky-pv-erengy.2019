@@ -176,6 +176,8 @@ h1 a{
 #sologan-pages h2{ 
     font-size: 4rem;
     padding: 73px 15px 0 0}
+#box_banner-index,
+#banner_slider{ height: 450px}
     
 #foot_main h3 a{
     background-size: cover}
@@ -381,7 +383,7 @@ h1 a{
     width: 240px;
     height: 180px}
 #sologan-pages h2{ 
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 0;
     padding: 73px 5px 0 0}    
     
