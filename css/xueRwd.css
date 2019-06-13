@@ -75,8 +75,8 @@ h1 a{
 #page_main,
 #box_advantage{
     width: 90%;
-    margin: 0 auto
-}    
+    margin: 0 auto}
+    
 #box_service h4,
 #box_case h4{ margin: 0 50px}
 #case_text p{ padding: 20px 50px 0}    
@@ -113,6 +113,25 @@ h1 a{
 .info_big img{
     width: 250px;
     height: auto}
+    
+#list_projects li{
+    width: 48%}    
+#list_projects .list-left{
+    width: 150px;
+    height: 150px}
+#list_projects .list-right{
+    width: 58%;
+    padding-top: 0}    
+#list_projects .list-right img{
+    width: 60px;
+    height: 60px}
+#list_metals img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto}
+#list_metals li::after{ top:50px}    
+
 }
 
 /*
@@ -202,7 +221,39 @@ h1 a{
 .info_big img{
     width: 200px;
     height: auto}
+
+#list_projects{ padding-left: 15px}    
+#list_projects li{
+    width: 48%}    
+#list_projects .list-left{
+    float: none;
+    width: 300px;
+    height: 300px}
+#list_projects .list-right{
+    float: none;
+    width: 100%;
+    padding: 0 0 10px 0;}    
+#list_projects .list-right img{
+    width: 92px;
+    height: 92px}
     
+#flowChart{ 
+    width: 80%;
+    margin: 0 auto}
+#list_metals img{
+    display: block;
+    width: 92px;
+    height: 92px;
+    margin: 0 auto}
+#list_metals li::after{ top:35px}
+#box_contact{
+    float: none;
+    width: 100%;
+    padding-bottom: 30px}
+#mymap{
+    float: none;
+    width: 90%;
+    margin: 0 auto}  
 }
 
 /*
@@ -251,7 +302,37 @@ h1 a{
     float: none;
     width: 100%}
 .info_small{ flex: 35%}
-    
+
+#list_projects{
+    width: 80%;
+    padding-left: 0}        
+#list_projects li{
+    width: 45%;
+    margin: 0 2%}    
+#list_projects .list-left{
+    float: none;
+    width: 100%;
+    height: auto}
+#list_projects .list-right a{
+    display: inline-block;
+    width: 32%}    
+#list_projects .list-right img{
+    width: 100%;
+    height: auto} 
+#list_projects li:nth-child(odd){
+    margin-right: 10px}
+#list_metals{ width: 98%}    
+#list_metals li{
+    margin: 0 10px}
+#list_metals li::after{ 
+    top:35px;
+    right: -21px}      
+#list_metals img{
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto}
+#list_metals p{ font-size: 1.6rem}        
 }
     
 /*
@@ -394,7 +475,48 @@ h1 a{
     margin: 0 5px 20px}
 .advantage_list{ padding: 0 0 0 20px}
 #system_list-down{ padding-top: 0}
-.info_small{ flex: 50%; margin-bottom: 20px}    
+.info_small{ flex: 50%; margin-bottom: 20px}
+    
+#list_projects li{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px}    
+#list_projects .list-left{
+    float: none;
+    width: 100%;
+    height: auto}
+#list_projects .list-right{
+    float: none;
+    width: 100%;
+    padding: 0 0 10px 0;}    
+#list_projects .list-right img{
+    width: 100%;
+    height: auto}
+#page_main p{ padding: 10px 0 0 15px}
+#list_projects li:nth-child(odd){
+    margin-right: 0}
+    
+#flowChart{ 
+    width: 95%;
+    margin: 0 auto}
+#list_metals{ width: 90%}    
+#list_metals li{
+    flex: 100%;
+    margin: 35px 0}
+#list_metals li::after{ 
+    top: -40px;
+    right: 45%;
+    background: url(../images/icon_arrow-down.svg) no-repeat}
+#list_metals li:nth-child(1)::after{
+    display: none}     
+#list_metals li:nth-child(5)::after{
+    display: block}    
+#list_metals img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto}
+#list_metals p{ font-size: 1.6rem}     
 
 }
 

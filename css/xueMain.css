@@ -390,7 +390,7 @@ h1 a{
 	/*text-indent: 200%;*/
 	color: rgba(255, 255, 255, .9);
 	outline: none;
-	z-index: 100}
+	z-index: 500}
 .overlay .overlay-close:hover{ 
     color: rgba(255, 255, 255, 1);
     cursor: pointer}
@@ -618,6 +618,7 @@ h1 a{
     position: absolute;
     top: 47%;
     left: 50%;
+    z-index: 999;
     margin: 0 -107px;
     width: 207px;
     height: 107px;
