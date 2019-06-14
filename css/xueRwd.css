@@ -430,7 +430,7 @@ h1 a{
 #box_service p,
 #case_text p{
     font-size: 1.6rem;
-    line-height: 2rem;
+    line-height: 2.4rem;
     color: #5A5A5A;
     text-align: center;   
 }
@@ -478,6 +478,9 @@ h1 a{
 .advantage_list{ padding: 0 0 0 20px}
 #system_list-down{ padding-top: 0}
 .info_small{ flex: 50%; margin-bottom: 20px}
+#page_main .info_big p{
+    font-size: 1.6rem;
+    line-height: 2.4rem}    
     
 #list_projects li{
     width: 100%;
