@@ -19,11 +19,9 @@ loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
 });
 
 //wow載入動畫
-loadjs('https://cdn.jsdelivr.net/npm/wow.js@1.2.2/dist/wow.min.js', function() {
-  new WOW(
-   { offset: 10}
-  ).init();
-});
+loadjs('https://cdn.rawgit.com/graingert/WOW/34712a3d/dist/wow.min.js', function() {
+    new WOW().init();
+});  
 
 //返回頂端
 loadjs(['script/lib/jquery.ui.totop.min.js', 'https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js'], function() {
