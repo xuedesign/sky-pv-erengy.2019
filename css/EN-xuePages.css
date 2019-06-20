@@ -1,0 +1,582 @@
+@charset "utf-8";
+/*-- Created By
+   ##############               ###############   
+    ##############             ###############    
+    ##############             ##############     
+     ##############           ##############      
+      ##############          #############       
+       #############         ##############       
+        #############       ##############        
+        ##############      #############         
+         ###############################          
+         ###############################          
+        #################################         
+        ##############     ##############         
+       ##############       ##############        
+       ##############        ##############       
+      ##############         #######           
+     ###############          ##############      
+     ##############           ###############     
+    ######      
+    ##############              ##############    
+   ##############               ##############
+          
+                 xuedesign studio 
+             https://www.xuedesign.tw/
+*
+* @project    SKY PV ENERGY Official website
+* @Author     Elmo Woo <hello@xuedesign.tw>
+* @copyright  2019 xuedesign studio
+* @version    v1.0 - 201906
+*
+*=====================================
+* 1.首頁
+* 2.關於天晶
+* 3.太陽能介紹
+* 4.案場經驗
+* 5.太陽能材料
+* 6.聯絡我們
+* 7.錯誤頁面
+*=====================================
+**/
+
+#box_service,
+#container{
+    display: block;
+    width: 1100px;
+    padding: 50px 0;
+    margin: 0 auto
+}
+#box_case,
+#bar_cookie,
+#page_main,
+#box_advantage,
+#flowChart{
+    display: block;
+    width: 100%
+}
+#box_case{
+    margin-bottom: 30px;
+    background: rgba(213, 220, 230, 0.6);
+    overflow: hidden
+}
+#box_advantage{
+    margin-top: 30px;
+    height: 500px;
+    position: relative;
+}
+
+.webp .bg_about{
+    background: url(../images/banner_about.webp) no-repeat;
+    background-position: center 8px}
+.no-webp .bg_about{
+    background: url(../images/banner_about.jpg) no-repeat;
+    background-position: center 8px}
+.webp .bg_projects{
+    background: url(../images/banner_project.webp) no-repeat;
+    background-position: center 8px}
+.no-webp .bg_projects{
+    background: url(../images/banner_project.jpg) no-repeat;
+    background-position: center 8px}
+.webp .bg_contact{
+    background: url(../images/banner_contact.webp) no-repeat;
+    background-position: center 8px}
+.no-webp .bg_contact{
+    background: url(../images/banner_contact.jpg) no-repeat;
+    background-position: center 8px}
+.webp .bg_advantage{
+    background: url(../images/banner_advantage.webp) no-repeat;
+    background-position: center 8px
+}
+.no-webp .bg_advantage{
+    background: url(../images/banner_advantage.jpg) no-repeat;
+    background-position: center 8px
+}
+.webp .bg_products{
+    background: url(../images/banner_products.webp) no-repeat;
+    background-position: center 8px
+}
+.no-webp .bg_products{
+    background: url(../images/banner_products.jpg) no-repeat;
+    background-position: center 8px
+}
+.webp .bg_403{
+    background: url(../images/banner_403.webp) no-repeat;
+    background-position: center 8px
+}
+.no-webp .bg_403{
+    background: url(../images/banner_403.jpg) no-repeat;
+    background-position: center 8px
+}
+.webp .bg_404{
+    background: url(../images/banner_404.webp) no-repeat;
+    background-position: center 8px
+}
+.no-webp .bg_404{
+    background: url(../images/banner_404.jpg) no-repeat;
+    background-position: center 8px
+}
+#box_case::after,
+#page_main::after,
+#list_projects li::after,
+.info_big::after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+/*
+=====================================
+首頁
+=====================================
+*/
+#box_service h4,
+#box_case h4{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 6rem;
+    color: #243788;
+    border-bottom: 1px solid #243788}
+#box_case h4{ 
+    line-height: 3.5rem;
+    padding-bottom: 20px
+}
+#box_service h4::after,
+#box_service h4::before{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon_index-title.svg);
+    margin: 0 20px;
+    content: ""
+}
+#box_service p,
+#case_text p{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #5A5A5A;
+    text-align: center;   
+}
+#box_service p{
+    padding: 20px 40px 0
+}
+#case_text p{ 
+    padding: 20px 120px 0
+}
+.item_service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto;
+    padding: 50px 0 30px
+}
+.item_service li{
+    display: block;
+    flex: 4;
+    padding-top: 180px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgba(36, 55, 136, .8);
+    letter-spacing: 1px;
+    text-align: center
+}
+.item_service li:nth-child(1){
+    background: url(../images/icon_service-01.svg) no-repeat;
+    background-size: 150px 150px;
+    background-position: top center
+}
+.item_service li:nth-child(2){
+    background: url(../images/icon_service-02.svg) no-repeat;
+    background-size: 150px 150px;
+    background-position: top center
+}
+.item_service li:nth-child(3){
+    background: url(../images/icon_service-03.svg) no-repeat;
+    background-size: 150px 150px;
+    background-position: top center
+}
+.item_service li:nth-child(4){
+    background: url(../images/icon_service-04.svg) no-repeat;
+    background-size: 150px 150px;
+    background-position: top center
+}
+
+#case_text{
+    display: block;
+    position: relative;
+    float: left;
+    width: 56%;
+    height: 425px;
+    padding: 90px 50px;
+    background: url(../images/bg_showcase.svg) no-repeat;
+    background-position: bottom right
+}
+#case_pic{
+    display: block;
+    float: right;
+    width: 43%
+}
+
+/*
+=====================================
+關於天晶
+=====================================
+*/
+#bar_cookie{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: right;
+    color: #848383
+}
+#bar_cookie a,
+#bar_cookie a:visited{
+    color: #848383;
+    text-decoration: none;
+}
+#bar_cookie a:hover{
+    color: #37D0B4;
+    text-decoration: underline
+}
+#bar_cookie a::before{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/icon_index-title.svg) no-repeat;
+    background-size: 14px 14px;
+    padding-right: 8px
+}
+#page_main h3{
+    font-size: 3rem;
+    line-height: 5rem;
+    color: #243788
+}
+#page_main h3::before{
+    content: "";
+    display: inline-block;
+    width: 51px;
+    height: 60px;
+    background: url(../images/icon_page-title.svg) no-repeat;
+    background-position: 0 25px;
+    background-size: 40px 40px;
+    padding-right: 0
+}
+#page_main p{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #5a5a5a;
+    padding-left: 50px
+}
+#box_about,
+#box_contact{
+    display: block;
+    float: left;
+    width: 54%
+}
+#about_pic,
+#mymap{
+    display: block;
+    float: right;
+    width: 45%
+}
+#about_pic img{
+    display: block;
+    width: 100%;
+    height: auto
+}
+.company_list{
+    display: block;
+    width: 100%;
+    padding: 0 40px 20px 60px
+}
+.company_list li,
+.advantage_list li{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #5a5a5a;
+    padding: 10px 0;
+    border-bottom: 1px dashed #b4b4b4
+}
+
+/*
+=====================================
+太陽能介紹
+=====================================
+*/
+#box_pv{
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center
+}
+#box_pv a,
+#box_pv a:visited{
+    display: inline-block;
+    background: #e1e1e1;
+    padding: 8px 20px;
+    margin: 0 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: #5a5a5a;
+    text-decoration: none;
+    transition-duration: .5s
+}
+#box_pv a:hover,
+#box_pv .nowat{
+    color: #fff;
+    text-decoration: none;
+    background: #5a9ed3
+}
+.advantage_list{
+    display: block;
+    padding: 0 0 20px 60px
+}
+.advantage_list strong{
+    color: #d83434
+}
+#box_advantage img,
+#box_advantage p{
+    display: block;
+    position: absolute;    
+}
+#box_advantage img{
+    width: 700px;
+    height: 467px;
+    top:0;
+    left: 60px;
+    z-index: 10
+}
+#box_advantage p{
+    width: 500px;
+    height: 400px;
+    padding: 130px 15px 0 180px;
+    bottom: 0;
+    right: 0;
+    background: rgba(109,145,213,.3);
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-align: justify; 
+}
+#box_advantage span{
+    display: block;
+    font-size: 1.3rem}
+#box_advantage span a{
+    color: #243788;
+    text-decoration: underline
+}
+#box_advantage span a:hover{
+    color: #37d0b4;
+    text-decoration: underline
+}
+#system_list-top{  display: block}
+#system_list-down{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+#system_list-top,
+#system_list-down{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px
+}
+.info_big{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px
+}
+.info_small{
+    display: inline-block;
+    flex: 4;
+    width: 23%;
+    margin: 0 15px 30px;
+    vertical-align: top
+}
+.info_big h4,
+.info_small h4{
+    font-size: 2.2rem;
+    line-height: 4rem;
+    letter-spacing: 1px;
+    color: #5a5a5a
+}
+.info_big img{
+    display: block;
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #e1e1e1
+}
+.info_small img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #e1e1e1
+}
+#page_main .info_small p{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 0 0;
+    line-height: 2rem
+}
+#page_main .info_big p{ padding-left: 0}
+#page_main .info_big p,
+.info_big ul{
+    display: block;
+    float: right;
+    width: 65%;
+    line-height: 2rem
+}
+.info_big ul{ 
+    padding: 20px 0 0 25px}
+.info_big li{
+    list-style: disc;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #5a5a5a;
+    padding: 5px 0;
+    border-bottom: 1px dashed #b4b4b4    
+}
+#flowChart{ padding-top: 20px}
+#flowChart img{
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+/*
+=====================================
+案場經驗
+=====================================
+*/
+#list_projects{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    /*background: #e1e1e1*/
+}
+#list_projects li{
+    display: inline-block;
+    width: 49%;
+    padding: 30px 0
+}
+#list_projects li:nth-child(odd){
+    margin-right: 17px
+}
+#list_projects .list-left{
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #e1e1e1
+}
+#list_projects .list-right{
+    display: block;
+    float: right;
+    width: 55%;
+    padding-top: 20px
+}
+#list_projects .list-right h4{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    color: rgba(36, 55, 136, .8)
+}
+#list_projects .list-right h5{
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: rgba(36, 55, 136, .8);
+    text-align: left;
+    padding-bottom: 15px
+}
+#list_projects .list-right a{
+    border: 1px solid #e1e1e1
+}
+#list_projects li img{
+    transform:scale(1,1);transition: all .5s ease-out}
+#list_projects li img:hover{transform:scale(1.1,1.1)}
+
+
+/*
+=====================================
+太陽能材料
+=====================================
+*/
+#list_metals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto 0 auto
+}
+#list_metals li{
+    display: block;
+    position: relative;
+    flex: 5;
+    text-align: center;
+    margin: 0 15px
+}
+#list_metals li::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: -27px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon_arrow.svg) no-repeat;
+    opacity: .5
+}
+#list_metals li:nth-child(5)::after{
+    display: none
+}
+#list_metals img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto
+}
+#list_metals p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 0 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #5a5a5a;
+    line-height: 2.4rem
+}
+
+/*
+=====================================
+聯絡我們
+=====================================
+*/
+#box_contact a,
+#box_contact a:visited{
+    color: #5a5a5a;
+    text-decoration: underline
+}
+#box_contact a:hover{
+    color: #37d0b4;
+    text-decoration: none
+}
+#mymap{
+    margin-top: 50px;
+    height: 350px;
+    background: #e1e1e1
+}
+/*
+=====================================
+錯誤頁面
+=====================================
+*/

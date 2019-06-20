@@ -1,0 +1,605 @@
+@charset "utf-8";
+/*-- Created By
+   ##############               ###############   
+    ##############             ###############    
+    ##############             ##############     
+     ##############           ##############      
+      ##############          #############       
+       #############         ##############       
+        #############       ##############        
+        ##############      #############         
+         ###############################          
+         ###############################          
+        #################################         
+        ##############     ##############         
+       ##############       ##############        
+       ##############        ##############       
+      ##############         #######           
+     ###############          ##############      
+     ##############           ###############     
+    ######      
+    ##############              ##############    
+   ##############               ##############
+          
+                 xuedesign studio 
+             https://www.xuedesign.tw/
+*
+* @project    SKY PV ENERGY Official website
+* @Author     Elmo Woo <hello@xuedesign.tw>
+* @copyright  2019 xuedesign studio
+* @version    v1.0 - 201906
+*
+**/
+
+@media (max-width:1400px) {
+#box_banner-index{ height: 450px}
+#box_ban-left{
+    width: 103px;
+    height: 262px;
+    background-size: contain}
+#sologan{
+    top: 15px;
+    width: 509px;
+    height: 440px;
+    padding: 151px 45px 0 0;
+    background-size: contain}
+#sologan h2{
+    font-size: 4rem;
+    margin-left: 150px}
+#sologan h3{
+    font-size: 2.5rem}
+
+/*
+=====================================
+平板裝置(寬>長)  for-tablet-landscape-up
+=====================================
+*/
+@media (max-width:1110px) { /*1000*/
+header,
+#hdr-fixed{ height: 190px}
+#hdr-main{ width: 95%; margin: 0 auto}
+h1 a{
+    display: block;
+    width: 1000px;
+    height: 68px;
+    background-size: 371px 68px;
+    background-position: top center}
+#nav_main{ flex: 2}
+#box_lang{ flex: 1}
+#deco_left,
+#deco_right{ background-size: contain}
+
+#box_service,
+#container{ width: 100%}
+#bar_cookie,
+#page_main,
+#box_advantage{
+    width: 90%;
+    margin: 0 auto}
+    
+#box_service h4,
+#box_case h4{ margin: 0 50px}
+#case_text p{ padding: 20px 50px 0}    
+#case_text{
+    width: 58%;
+    height: 425px;
+    padding: 80px 20px}
+#case_pic{ width: 41%}
+#box_about,
+#about_pic{
+    float: none;
+    width: 100%}
+    
+#box_advantage{
+    display: block;
+    position: static;
+    height: 650px;
+    padding-bottom: 50px}
+#box_advantage img,
+#box_advantage p{
+    display: block;
+    position: static;    
+}    
+#box_advantage img{
+    width: 100%;
+    height: auto;
+    margin: 20px auto}
+#box_advantage p{
+    background: none;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    padding: 0}
+.info_big img{
+    width: 250px;
+    height: auto}
+    
+#list_projects li{
+    width: 48%}    
+#list_projects .list-left{
+    width: 150px;
+    height: 150px}
+#list_projects .list-right{
+    width: 58%;
+    padding-top: 0}    
+#list_projects .list-right img{
+    width: 60px;
+    height: 60px}
+#list_metals img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto}
+#list_metals li::after{ top:50px}    
+
+}
+
+/*
+=====================================
+平板裝置(長>寬) for-tablet-portrait-up
+=====================================
+*/
+@media (max-width:800px) { /*750*/
+header,
+#hdr-fixed{ height: 120px}
+h1 a{
+    display: block;
+    flex: 1;
+    width: 371px;
+    height: 68px;
+    background-size: 371px 68px;
+    background-position: top center}
+#nav_main,
+#box_lang{ display: none}
+#trigger-overlay{ 
+    display: block;
+    flex: 1;
+    padding: 15px 30px 0 0;
+    text-align: right;
+    font-size: 3.5rem;
+    color: #243788}   
+#sologan{
+    top: 15px;
+    width: 450px;
+    height: 440px;
+    padding: 151px 45px 0 0;
+    background-size: cover}
+#sologan h2{
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin-left: 150px}
+#sologan h3{
+    font-size: 2.2rem}
+#sologan-pages{
+    width: 340px;
+    height: 224px}
+#sologan-pages h2{ 
+    font-size: 4rem;
+    padding: 73px 15px 0 0}
+#box_banner-index,
+#banner_slider{ height: 450px}
+    
+#foot_main h3 a{
+    background-size: cover}
+.company_info{
+    width: 55%;
+    padding-left: 50px}
+.footer_nav{ display: none}    
+
+#box_service{ padding: 30px 0 10px}
+.item_service{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 30px}
+.item_service li{ padding-top: 140px}
+.item_service li:nth-child(1){
+    background: url(../images/icon_service-01.svg) no-repeat;
+    background-size: 120px 120px;
+    background-position: top center}
+.item_service li:nth-child(2){
+    background: url(../images/icon_service-02.svg) no-repeat;
+    background-size: 120px 120px;
+    background-position: top center}
+.item_service li:nth-child(3){
+    background: url(../images/icon_service-03.svg) no-repeat;
+    background-size: 120px 120px;
+    background-position: top center}
+.item_service li:nth-child(4){
+    background: url(../images/icon_service-04.svg) no-repeat;
+    background-size: 120px 120px;
+    background-position: top center}
+#case_text{
+    width: 73%;
+    height: 425px;
+    padding: 70px 20px}
+#case_pic{ width: 26%}
+#box_pv{ width: 90%}
+#box_advantage{ height: 550px}    
+#page_main h3{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-indent: -52px;
+    padding-left: 60px}
+.info_big img{
+    width: 200px;
+    height: auto}
+
+#list_projects{ padding-left: 15px}    
+#list_projects li{
+    width: 48%}    
+#list_projects .list-left{
+    float: none;
+    width: 300px;
+    height: 300px}
+#list_projects .list-right{
+    float: none;
+    width: 100%;
+    padding: 0 0 10px 0;}    
+#list_projects .list-right img{
+    width: 92px;
+    height: 92px}
+    
+#flowChart{ 
+    width: 80%;
+    margin: 0 auto}
+#list_metals img{
+    display: block;
+    width: 92px;
+    height: 92px;
+    margin: 0 auto}
+#list_metals li::after{ top:35px}
+#box_contact{
+    float: none;
+    width: 100%;
+    padding-bottom: 30px}
+#mymap{
+    float: none;
+    width: 90%;
+    margin: 0 auto}  
+}
+
+/*
+=====================================
+平板裝置(7"~8"小平板) for-SnmallTablet
+=====================================
+*/
+@media (max-width: 600px) { /*573*/
+#box_banner-index,
+#banner_slider{ height: 350px}   
+#sologan{
+    top: 15px;
+    width: 350px;
+    height: 320px;
+    padding: 100px 25px 0 0;
+    background-size: cover}
+#sologan h2{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-left: 90px}
+#sologan h3{
+    font-size: 1.8rem}
+#deco_left{ background-position: bottom}
+    
+#case_text{
+    width: 69%;
+    height: 425px;
+    padding: 60px 0}
+#case_pic{ width: 30%}
+#box_case h4{ font-size: 2.5rem}    
+#case_text p{ 
+    padding: 20px 30px 0}
+#box_advantage{ height: 450px}
+#box_pv{ width: 100%}    
+#box_pv a,
+#box_pv a:visited{
+    padding: 8px 15px;
+    margin: 0 5px}
+.info_big img{
+    float: none;
+    width: 300px;
+    height: auto;
+    margin: 0 auto 20px}
+#page_main .info_big p,
+.info_big ul{
+    float: none;
+    width: 100%}
+.info_small{ flex: 35%}
+
+#list_projects{
+    width: 80%;
+    padding-left: 0}        
+#list_projects li{
+    width: 45%;
+    margin: 0 2%}    
+#list_projects .list-left{
+    float: none;
+    width: 100%;
+    height: auto}
+#list_projects .list-right a{
+    display: inline-block;
+    width: 32%}    
+#list_projects .list-right img{
+    width: 100%;
+    height: auto} 
+#list_projects li:nth-child(odd){
+    margin-right: 10px}
+#list_metals{ width: 98%}    
+#list_metals li{
+    margin: 0 10px}
+#list_metals li::after{ 
+    top:35px;
+    right: -21px}      
+#list_metals img{
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto}
+#list_metals p{ font-size: 1.6rem}        
+}
+    
+/*
+=====================================
+手機(5"以上大螢幕) for-phone-only
+=====================================
+*/
+@media (max-width: 420px) { /*360*/
+header,
+#hdr-fixed{ height: 100px}
+#hdr-main{ padding-top: 10px}
+#container{ padding-bottom: 0}    
+    
+#box_banner-index,
+#banner_slider{ height: 230px}
+h1 a{
+    display: block;
+    flex: 1;
+    width: 240px;
+    height: 60px;
+    background-size: 240px 60px;
+    background-position: center 7px}
+#box_ban-left{
+    width: 39px;
+    height: 100px;} 
+#sologan{
+    top: 5px;
+    width: 240px;
+    height: 220px;
+    padding: 60px 8px 0 0}
+#sologan h2{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-left: 50px}
+#sologan h3{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-top: 8px}
+#box_ban-pleft{
+    width: 142px;
+    height: 96px;
+    background-size: contain}
+#box_banner-pages{ 
+    height: 170px}
+#sologan-pages{
+    width: 240px;
+    height: 180px}
+#sologan-pages h2{ 
+    font-size: 2.5rem;
+    letter-spacing: 0;
+    padding: 73px 5px 0 0}    
+    
+.overlay nav .ilogo{
+    height: 130px;
+    background-size: 180px 120px;
+    margin: 0 auto 15px auto}
+#box_mlan{
+    padding: 30px 0;
+    font-size: 2.2rem;
+    line-height: 5erm}
+.overlay ul li a {
+    font-size: 3rem;
+	line-height: 3rem}
+#foot_main{ padding: 25px 0 10px 0;}
+#foot_main h3 a{
+    margin-top: 0;
+    width: 360px;
+    background-position:  top center;
+    background-size: 180px 93px }
+.company_info{
+    width: 360px;
+    padding: 10px 20px 0}
+.copyright{
+    display: block;
+    width: 90%;
+    margin: 0 auto}
+.slogan{
+    font-size: 1.6rem;
+    line-height: 2rem}
+#sologan h2{
+    letter-spacing: 1px;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-left: 55px}
+    
+#box_service h4,
+#box_case h4{ 
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    margin: 0 20px}
+#box_service h4::after,
+#box_service h4::before{ margin: 0 5px}
+#box_service p,
+#case_text p{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #5A5A5A;
+    text-align: center;   
+}
+.item_service li{
+    flex: 50%;
+    padding-top: 160px}
+.item_service li:nth-child(1){
+    background: url(../images/icon_service-01.svg) no-repeat;
+    background-size: 140px 140px;
+    background-position: top center;
+    margin-bottom: 30px}
+.item_service li:nth-child(2){
+    background: url(../images/icon_service-02.svg) no-repeat;
+    background-size: 140px 140px;
+    background-position: top center;
+    margin-bottom: 30px}
+.item_service li:nth-child(3){
+    background: url(../images/icon_service-03.svg) no-repeat;
+    background-size: 140px 140px;
+    background-position: top center}
+.item_service li:nth-child(4){
+    background: url(../images/icon_service-04.svg) no-repeat;
+    background-size: 140px 140px;
+    background-position: top center}
+#case_text,
+#case_pic{ 
+    float: none;
+    width: 100%}
+#case_pic img{
+    width: 100%;
+    height: auto}
+#case_text{
+    height: 350px;
+    padding: 30px 0}
+.company_list{
+    padding: 0 10px 20px 20px}
+#box_advantage{ height: 350px}
+#box_pv{ 
+    width: 100%;
+    margin-bottom: 0}    
+#box_pv a,
+#box_pv a:visited{
+    padding: 8px 20px;
+    margin: 0 5px 20px}
+.advantage_list{ padding: 0 0 0 20px}
+#system_list-down{ padding-top: 0}
+.info_small{ flex: 50%; margin-bottom: 20px}
+#page_main .info_big p{
+    font-size: 1.6rem;
+    line-height: 2.4rem}    
+    
+#list_projects li{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px}    
+#list_projects .list-left{
+    float: none;
+    width: 100%;
+    height: auto}
+#list_projects .list-right{
+    float: none;
+    width: 100%;
+    padding: 0 0 10px 0;}    
+#list_projects .list-right img{
+    width: 100%;
+    height: auto}
+#page_main p{ padding: 10px 0 0 15px}
+#list_projects li:nth-child(odd){
+    margin-right: 0}
+    
+#flowChart{ 
+    width: 95%;
+    margin: 0 auto}
+#list_metals{ width: 90%}    
+#list_metals li{
+    flex: 100%;
+    margin: 35px 0}
+#list_metals li::after{ 
+    top: -40px;
+    right: 45%;
+    background: url(../images/icon_arrow-down.svg) no-repeat}
+#list_metals li:nth-child(1)::after{
+    display: none}     
+#list_metals li:nth-child(5)::after{
+    display: block}    
+#list_metals img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto}
+#list_metals p{ font-size: 1.6rem}     
+
+}
+
+/*
+=====================================
+手機(4.7"以下小螢幕) for-phone-only
+=====================================
+*/
+@media (max-width: 321px) { /*300*/
+header,
+#hdr-fixed{ height: 80px}
+#hdr-main{ padding-top: 5px}
+#box_banner-index,
+#banner_slider{ height: 200px}
+h1 a{
+    display: block;
+    flex: 1;
+    width: 200px;
+    height: 55px;
+    background-size: 200px 55px;
+    background-position: center 5px}
+#sologan{
+    top: 5px;
+    width: 240px;
+    height: 190px;
+    padding: 40px 8px 0 0}
+.slogan{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0}
+#foot_main h3 a{ width: 300px}
+.overlay nav .ilogo{
+    height: 115px;
+    background-size: 160px 107px;
+    margin: 0 auto 15px auto}
+#box_banner-pages{ 
+    height: 150px}
+#box_ban-pleft{
+    width: 122px;
+    height: 86px}
+#sologan-pages{
+    width: 240px;
+    height: 160px}
+#sologan-pages h2{ 
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    padding: 60px 10px 0 0}
+
+#box_case{ margin-bottom: 0}
+#box_service h4,
+#box_case h4{ 
+    font-size: 2.3rem;
+    line-height: 3.45rem}
+#box_case h4{ margin: 0 40px}    
+.item_service li{
+    flex: 100%;
+    padding-top: 160px}
+.item_service li:nth-child(3){
+    background: url(../images/icon_service-03.svg) no-repeat;
+    background-size: 140px 140px;
+    background-position: top center;
+    margin-bottom: 30px}
+#case_text{
+    height: 420px;
+    padding: 30px 0}     
+.info_big img{
+    width: 250px;
+    height: auto}
+    
+}
+
+
+/*
+=====================================
+for-retina-photo
+=====================================
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi){
+        
+}
