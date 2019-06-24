@@ -169,7 +169,7 @@ h1 a{
     display: block;
     width: 371px;
     height: 68px;
-    background-image: url(../images/h1.svg);
+    background-image: url(../images/h1-EN.svg);
     background-repeat: no-repeat;
     text-indent: 100%;
     white-space: nowrap;
@@ -257,7 +257,7 @@ h1 a{
     margin-top: 25px;
     width: 207px;
     height: 107px;
-    background: url(../images/logo-foot.svg) no-repeat;
+    background: url(../images/logo-foot-EN.svg) no-repeat;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden}
