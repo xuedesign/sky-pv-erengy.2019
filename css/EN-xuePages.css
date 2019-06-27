@@ -469,7 +469,7 @@
     padding: 30px 0
 }
 #list_projects li:nth-child(odd){
-    margin-right: 17px
+    margin-right: 16px
 }
 #list_projects .list-left{
     display: block;
