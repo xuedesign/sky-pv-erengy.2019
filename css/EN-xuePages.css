@@ -363,13 +363,13 @@
 #box_advantage p{
     width: 500px;
     height: 400px;
-    padding: 130px 15px 0 180px;
+    padding: 80px 15px 0 180px;
     bottom: 0;
     right: 0;
     background: rgba(109,145,213,.3);
     font-size: 1.8rem;
     line-height: 2.5rem;
-    text-align: justify; 
+    /*text-align: justify;*/ 
 }
 #box_advantage span{
     display: block;
@@ -408,10 +408,13 @@
 }
 .info_big h4,
 .info_small h4{
-    font-size: 2.2rem;
-    line-height: 4rem;
-    letter-spacing: 1px;
+    font-size: 2rem;
+    line-height: 2.3rem;
     color: #5a5a5a
+}
+.info_small h4{
+    min-height: 4rem;
+    vertical-align: text-bottom
 }
 .info_big img{
     display: block;
@@ -451,6 +454,8 @@
     padding: 5px 0;
     border-bottom: 1px dashed #b4b4b4    
 }
+.info_big li span{
+    color: #8e8e8e}
 #flowChart{ padding-top: 20px}
 #flowChart img{
     display: block;
