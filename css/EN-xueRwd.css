@@ -48,6 +48,9 @@
     margin-left: 150px}
 #sologan h3{
     font-size: 2.5rem}
+#sologan-pages h2{ 
+    font-size: 4rem;
+    padding: 90px 70px 0 0}    
 
 /*
 =====================================
@@ -68,6 +71,9 @@ h1 a{
 #box_lang{ flex: 1}
 #deco_left,
 #deco_right{ background-size: contain}
+    
+#sologan{ padding: 90px 45px 0 0}
+#sologan h2{ font-size: 4rem; line-height: 4rem}    
 
 #box_service,
 #container{ width: 100%}
@@ -98,8 +104,7 @@ h1 a{
 #box_advantage img,
 #box_advantage p{
     display: block;
-    position: static;    
-}    
+    position: static}    
 #box_advantage img{
     width: 100%;
     height: auto;
@@ -132,6 +137,11 @@ h1 a{
     margin: 0 auto}
 #list_metals li::after{ top:50px}    
 
+/*#foot_main h3 a{ 
+    width: 33%;
+    background-size: cover}    */
+.company_info{ width: 50%; padding-left: 80px}
+.footer_nav{ padding-left: 50px}    
 }
 
 /*
@@ -162,12 +172,12 @@ h1 a{
     top: 15px;
     width: 450px;
     height: 440px;
-    padding: 151px 45px 0 0;
+    padding: 110px 25px 0 0;
     background-size: cover}
 #sologan h2{
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-    margin-left: 150px}
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+    margin-left: 90px}
 #sologan h3{
     font-size: 2.2rem}
 #sologan-pages{
@@ -175,7 +185,7 @@ h1 a{
     height: 224px}
 #sologan-pages h2{ 
     font-size: 4rem;
-    padding: 73px 15px 0 0}
+    padding: 90px 30px 0 0}
 #box_banner-index,
 #banner_slider{ height: 450px}
     
@@ -270,15 +280,20 @@ h1 a{
     top: 15px;
     width: 350px;
     height: 320px;
-    padding: 100px 25px 0 0;
+    padding: 100px 10px 0 0;
     background-size: cover}
 #sologan h2{
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     line-height: 3rem;
-    margin-left: 90px}
+    margin-left: 100px}
 #sologan h3{
-    font-size: 1.8rem}
+    font-size: 1.8rem;
+    padding-top: 0}
 #deco_left{ background-position: bottom}
+    
+#box_service h4::after,
+#box_service h4::before{ margin: 0 5px}
+.item_service li:nth-child(4){margin-top:30px }    
     
 #case_text{
     width: 69%;
@@ -364,7 +379,7 @@ h1 a{
     top: 5px;
     width: 240px;
     height: 220px;
-    padding: 60px 8px 0 0}
+    padding: 30px 8px 0 0}
 #sologan h2{
     font-size: 2rem;
     line-height: 2rem;
@@ -385,7 +400,7 @@ h1 a{
 #sologan-pages h2{ 
     font-size: 2.5rem;
     letter-spacing: 0;
-    padding: 73px 5px 0 0}    
+    padding: 70px 20px 0 0}    
     
 .overlay nav .ilogo{
     height: 130px;
@@ -420,20 +435,24 @@ h1 a{
     line-height: 2rem;
     margin-left: 55px}
     
-#box_service h4,
+#box_service h4{
+    font-size: 2.3rem;
+    line-height: 3.75rem;
+    padding-bottom: 15px;
+    margin: 0 20px}
 #box_case h4{ 
     font-size: 2.5rem;
     line-height: 3.75rem;
     margin: 0 20px}
 #box_service h4::after,
-#box_service h4::before{ margin: 0 5px}
+#box_service h4::before{ display: none}   
 #box_service p,
 #case_text p{
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: #5A5A5A;
-    text-align: center;   
-}
+    color: #5A5A5A}
+#box_service p{ text-align: left}
+#case_text p{ text-align: center}    
 .item_service li{
     flex: 50%;
     padding-top: 160px}
@@ -454,7 +473,8 @@ h1 a{
 .item_service li:nth-child(4){
     background: url(../images/icon_service-04.svg) no-repeat;
     background-size: 140px 140px;
-    background-position: top center}
+    background-position: top center;
+    margin-top: 0}
 #case_text,
 #case_pic{ 
     float: none;
@@ -547,7 +567,12 @@ h1 a{
     top: 5px;
     width: 240px;
     height: 190px;
-    padding: 40px 8px 0 0}
+    padding: 20px 8px 0 0}
+#sologan h2{
+    letter-spacing: 0;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-left: 55px}    
 .slogan{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -570,8 +595,11 @@ h1 a{
     letter-spacing: 0;
     padding: 60px 10px 0 0}
 
-#box_case{ margin-bottom: 0}
-#box_service h4,
+#box_case{ 
+    margin-bottom: 0}
+#box_service h4{
+    font-size: 2.3rem;
+    line-height: 3rem}
 #box_case h4{ 
     font-size: 2.3rem;
     line-height: 3.45rem}
@@ -585,7 +613,7 @@ h1 a{
     background-position: top center;
     margin-bottom: 30px}
 #case_text{
-    height: 420px;
+    height: 320px;
     padding: 30px 0}     
 .info_big img{
     width: 250px;
