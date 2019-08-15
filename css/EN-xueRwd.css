@@ -95,6 +95,7 @@ h1 a{
 #about_pic{
     float: none;
     width: 100%}
+#about_pic img{ margin-top: 20px}    
     
 #box_advantage{
     display: block;

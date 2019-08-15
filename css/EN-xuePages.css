@@ -271,18 +271,41 @@
 }
 #page_main p{
     font-size: 1.8rem;
-    line-height: 3rem;
+    line-height: 2.5rem;
     color: #5a5a5a;
-    padding-left: 50px
+    padding: 0 0 18px 50px
 }
+#page_main a:link{
+    color: #243788;
+    text-decoration: underline
+}
+#page_main a:hover{
+    color: #81b41c;
+    text-decoration: none
+}
+#page_main a:visited{
+    color: #808080;
+    text-decoration: underline
+}
+#page_main .source{
+    font-size: 1.3rem;
+    text-align: right
+}
+
 #box_about,
 #box_contact{
     display: block;
     float: left;
-    width: 54%
+    width: 52%
 }
 #box_about p{
-    margin-bottom: 20px
+    margin-bottom: 10px
+}
+#box_about img{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 10px auto
 }
 #about_pic,
 #mymap{
@@ -293,7 +316,8 @@
 #about_pic img{
     display: block;
     width: 100%;
-    height: auto
+    height: auto;
+    margin-top: 85px
 }
 .company_list{
     display: block;

@@ -272,6 +272,23 @@
     color: #5a5a5a;
     padding-left: 50px
 }
+#page_main a:link{
+    color: #243788;
+    text-decoration: underline
+}
+#page_main a:hover{
+    color: #81b41c;
+    text-decoration: none
+}
+#page_main a:visited{
+    color: #808080;
+    text-decoration: underline
+}
+#page_main .source{
+    font-size: 1.3rem;
+    text-align: right
+}
+
 #box_about,
 #box_contact{
     display: block;
