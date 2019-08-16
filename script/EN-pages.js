@@ -29,6 +29,9 @@ loadjs(['../script/lib/jquery.ui.totop.min.js', 'https://cdn.jsdelivr.net/npm/jq
 loadjs(['https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css','https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js'], function() {
 });
 
+//Mailto
+loadjs("https://cdn.jsdelivr.net/npm/mailtoui@1.0.2/dist/mailtoui-min.js");
+
 //行動版選單
 loadjs("../script/lib/overlay.modernizr.custom.js");
 loadjs("../script/lib/overlay-classie.js");
