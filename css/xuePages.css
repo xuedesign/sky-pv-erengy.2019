@@ -590,7 +590,7 @@
 #mymap{
     margin-top: 50px;
     height: 350px;
-    background: #e1e1e1
+    background: url(../images/bg_map.png) no-repeat
 }
 
 /*

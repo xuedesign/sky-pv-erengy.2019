@@ -137,7 +137,8 @@ h1 a{
     height: 120px;
     margin: 0 auto}
 #list_metals li::after{ top:50px}
-#box_contact{ width: 53%}    
+#box_contact{ width: 53%}
+#mymap{ background: none}     
 
 /*#foot_main h3 a{ 
     width: 33%;

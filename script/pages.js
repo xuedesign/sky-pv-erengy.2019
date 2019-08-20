@@ -1,11 +1,11 @@
+//google map
+loadjs(['https://maps.googleapis.com/maps/api/js?key=AIzaSyDraMIrnao7HAnudMt5_LRCgwE5ypcG-9o&callback=initMap','script/lib/googlemap.js']);
+
 //Modernizr增強性輔助語法
 loadjs("https://www.spvenergy.com/script/lib/modernizr-custom.js");
 
 //Fontawesome 網頁圖標
 loadjs("https://kit.fontawesome.com/daece105d8.js");
-
-//google map
-loadjs(['https://maps.googleapis.com/maps/api/js?key=AIzaSyDraMIrnao7HAnudMt5_LRCgwE5ypcG-9o&callback=initMap','script/lib/googlemap.js']);
 
 //圖片延遲載入
 loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
