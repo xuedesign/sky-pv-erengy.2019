@@ -495,19 +495,22 @@
     height: 200px;
     border: 1px solid #e1e1e1
 }
+#list_projects .pUp{ display: block}
+#list_projects .pDown{ display: none}
+
 #list_projects .list-right{
     display: block;
     float: right;
     width: 55%;
     padding-top: 20px
 }
-#list_projects .list-right h4{
+#list_projects li h4{
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 3.5rem;
     color: rgba(36, 55, 136, .8)
 }
-#list_projects .list-right h5{
+#list_projects li h5{
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 2rem;
@@ -518,9 +521,15 @@
 #list_projects .list-right a{
     border: 1px solid #e1e1e1
 }
+#list_projects .list-right img{
+    width: 30%;
+    margin: 0 .5%
+}
 #list_projects li img{
-    transform:scale(1,1);transition: all .5s ease-out}
-#list_projects li img:hover{transform:scale(1.1,1.1)}
+    transform:scale(1,1);
+    transition: all .5s ease-out}
+#list_projects li img:hover{ 
+    transform:scale(1.1,1.1)}
 
 
 /*
