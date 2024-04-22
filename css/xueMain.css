@@ -305,7 +305,7 @@ h1 a{
 #nav_main li a,
 #box_lang li a{
     color: #243788;
-    padding: 0 15px 5px;
+    padding: 5px 15px;
     text-decoration: none}
 #box_lang .nowlang a{
     background: #5a9ed3;
@@ -313,7 +313,7 @@ h1 a{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    padding: 0 15px 5px;
+    padding: 5px 15px;
     margin: 0 8px}
 #nav_main li::after,
 #box_lang li::after{
@@ -507,9 +507,7 @@ h1 a{
 	transition: transform 0.4s, opacity 0.4s}
 
 @media screen and (max-width: 420px) {
-    .overlay nav .ilogo{ display: none}
-	.overlay nav {
-        /*height: 75%;*/}
+  .overlay nav .ilogo{ display: none}
 	.overlay ul li {
         font-size: 2rem;
 		min-height: 25px}

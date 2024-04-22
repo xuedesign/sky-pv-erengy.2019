@@ -48,7 +48,7 @@
     margin-left: 150px}
 #sologan h3{
     font-size: 2.5rem}
-
+}
 /*
 =====================================
 平板裝置(寬>長)  for-tablet-landscape-up
@@ -155,7 +155,7 @@ h1 a{
 #trigger-overlay{ 
     display: block;
     flex: 1;
-    padding: 15px 30px 0 0;
+    padding: 17px 15px 0 0;
     text-align: right;
     font-size: 3.5rem;
     color: #243788}   
@@ -225,9 +225,9 @@ h1 a{
     width: 200px;
     height: auto}
 
-#list_projects{ padding-left: 15px}    
+#list_projects{ padding-left: 15px}
 #list_projects li{
-    width: 48%}    
+    width: 48%}
 #list_projects .list-left{
     float: none;
     width: 100%;
@@ -236,14 +236,14 @@ h1 a{
 #list_projects .list-right{
     float: none;
     width: 100%;
-    padding: 0 0 10px 0;}    
+    padding: 0 0 10px 0;}
 #list_projects .list-right img{
     display: inline-block;
     width: 30.4%;
     height: auto;
-    margin: 0 2px}
+    margin: 1%}
 #list_projects .pUp{ display: none}
-#list_projects .pDown{ display: block}    
+#list_projects .pDown{ display: block}
     
 #flowChart{ 
     width: 80%;
@@ -502,7 +502,8 @@ h1 a{
     padding: 0 0 10px 0;}    
 #list_projects .list-right img{
     width: 100%;
-    height: auto}
+    height: auto;
+    margin: 0 4% 5%}
 #page_main p{ padding: 10px 0 0 15px}
 #list_projects li:nth-child(odd){
     margin-right: 0}
@@ -597,15 +598,4 @@ h1 a{
     width: 250px;
     height: auto}
     
-}
-
-
-/*
-=====================================
-for-retina-photo
-=====================================
-*/
-@media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min-resolution: 2dppx),
-(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi){
-        
 }

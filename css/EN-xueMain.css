@@ -306,7 +306,7 @@ h1 a{
 #nav_main li a,
 #box_lang li a{
     color: #243788;
-    padding: 0 15px 5px;
+    padding: 5px 15px ;
     text-decoration: none}
 #box_lang .nowlang a{
     background: #5a9ed3;
@@ -314,7 +314,7 @@ h1 a{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    padding: 0 15px 5px;
+    padding: 5px 15px;
     margin: 0 8px}
 #nav_main li::after,
 #box_lang li::after{
