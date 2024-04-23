@@ -115,7 +115,9 @@ h1 a{
     height: auto}
     
 #list_projects li{
-    width: 48%}    
+    width: 48%;
+    margin-bottom: 30px;
+}
 #list_projects .list-left{
     width: 150px;
     height: 150px}
@@ -227,7 +229,9 @@ h1 a{
 
 #list_projects{ padding-left: 15px}
 #list_projects li{
-    width: 48%}
+    width: 48%;
+    margin-bottom: 0;
+}
 #list_projects .list-left{
     float: none;
     width: 100%;
@@ -313,10 +317,10 @@ h1 a{
 
 #list_projects{
     width: 80%;
-    padding-left: 0}        
+    padding-left: 0}
 #list_projects li{
     width: 45%;
-    margin: 0 2%}    
+    margin: 0 2%}
 #list_projects .list-left{
     float: none;
     width: 100%;

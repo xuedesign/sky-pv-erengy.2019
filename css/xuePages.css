@@ -477,7 +477,7 @@
 #list_projects{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     width: 90%;
     margin: 32px auto 0 auto;
     /*background: #e1e1e1*/
@@ -485,7 +485,11 @@
 #list_projects li{
     display: block;
     width: 49%;
-    padding: 30px 0
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+#list_projects li:last-child{
+    margin-bottom: 0
 }
 #list_projects li:nth-child(odd){
     margin-right: 17px
@@ -494,9 +498,13 @@
     display: block;
     float: left;
     width: 200px;
-    height: 200px;
     border: 1px solid #e1e1e1;
     vertical-align: top;
+}
+#list_projects .list-left img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 #list_projects .pUp{ display: block}
 #list_projects .pDown{ display: none}
