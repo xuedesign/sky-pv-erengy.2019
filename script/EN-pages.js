@@ -2,7 +2,7 @@
 loadjs("https://www.spvenergy.com/script/lib/modernizr-custom.js");
 
 //Fontawesome 網頁圖標
-loadjs("https://kit.fontawesome.com/daece105d8.js");
+loadjs("https://kit.fontawesome.com/360da40775.js");
 
 //google map
 loadjs(['https://maps.googleapis.com/maps/api/js?key=AIzaSyDraMIrnao7HAnudMt5_LRCgwE5ypcG-9o&language=en&callback=initMap','../script/lib/googlemap.js']);
