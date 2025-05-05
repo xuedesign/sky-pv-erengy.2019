@@ -1,8 +1,8 @@
-//Modernizr增強性輔助語法
+//Modernizr 增強性輔助語法
 loadjs("https://www.spvenergy.com/script/lib/modernizr-custom.js");
 
 //Fontawesome 網頁圖標
-loadjs("https://kit.fontawesome.com/360da40775.js");
+loadjs(["https://kit.fontawesome.com/847bf76aff.js","https://pro.fontawesome.com/releases/v5.0.10/css/all.css"]);
 
 //google map
 loadjs(['https://maps.googleapis.com/maps/api/js?key=AIzaSyDraMIrnao7HAnudMt5_LRCgwE5ypcG-9o&language=en&callback=initMap','../script/lib/googlemap.js']);
@@ -13,7 +13,7 @@ loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
     observer.observe();
 });
 
-//wow載入動畫
+//wow 載入動畫
 loadjs('https://cdn.rawgit.com/graingert/WOW/34712a3d/dist/wow.min.js', function() {
   new WOW().init();
 });

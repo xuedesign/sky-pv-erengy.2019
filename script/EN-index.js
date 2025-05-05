@@ -1,8 +1,8 @@
-//Modernizr增強性輔助語法
+//Modernizr 增強性輔助語法
 loadjs("../script/lib/modernizr-custom.js");
 
 //Fontawesome 網頁圖標
-loadjs("https://kit.fontawesome.com/360da40775.js");
+loadjs(["https://kit.fontawesome.com/847bf76aff.js","https://pro.fontawesome.com/releases/v5.0.10/css/all.css"]);
 
 //圖片輪播
 loadjs(['../css/flexslider.css','../script/lib/jquery.flexslider.js'], function() {
@@ -18,7 +18,7 @@ loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
     observer.observe();
 });
 
-//wow載入動畫
+//wow 載入動畫
 loadjs('https://cdn.rawgit.com/graingert/WOW/34712a3d/dist/wow.min.js', function() {
     new WOW().init();
 });  
