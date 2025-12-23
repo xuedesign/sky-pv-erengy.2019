@@ -2,7 +2,8 @@
 loadjs("../script/lib/modernizr-custom.js");
 
 //Fontawesome 網頁圖標
-loadjs(["https://kit.fontawesome.com/847bf76aff.js","https://pro.fontawesome.com/releases/v5.0.10/css/all.css"]);
+//loadjs(["https://kit.fontawesome.com/e1a514447c.js","https://pro.fontawesome.com/releases/v5.0.10/css/all.css"]);
+loadjs("https://kit.fontawesome.com/e1a514447c.js");
 
 //圖片輪播
 loadjs(['../css/flexslider.css','../script/lib/jquery.flexslider.js'], function() {
