@@ -47,6 +47,12 @@
     padding: 50px 0;
     margin: 0 auto
 }
+#container-projects{
+    display: block;
+    width: 90%;
+    padding: 50px 0;
+    margin: 0 auto
+}
 #box_case,
 #bar_cookie,
 #page_main,
