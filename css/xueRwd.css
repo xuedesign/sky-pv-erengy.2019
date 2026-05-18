@@ -227,7 +227,9 @@ h1 a{
     width: 200px;
     height: auto}
 
-#list_projects{ padding-left: 15px}
+#list_projects{ 
+    padding-left: 15px
+}
 #list_projects li{
     width: 48%;
     margin-bottom: 0;
@@ -316,7 +318,7 @@ h1 a{
 .info_small{ flex: 35%}
 
 #list_projects{
-    width: 80%;
+    width: 100%;
     padding-left: 0}
 #list_projects li{
     width: 45%;
@@ -352,7 +354,7 @@ h1 a{
 手機(5"以上大螢幕) for-phone-only
 =====================================
 */
-@media (max-width: 420px) { /*360*/
+@media (max-width: 480px) { /*360*/
 header,
 #hdr-fixed{ height: 100px}
 #hdr-main{ padding-top: 10px}
@@ -365,8 +367,10 @@ h1 a{
     flex: 1;
     width: 240px;
     height: 60px;
-    background-size: 240px 60px;
-    background-position: center 7px}
+    background-size: contain;
+    background-position: center 7px;
+    margin-top: 8px;
+}
 #box_ban-left{
     width: 39px;
     height: 100px;} 
@@ -491,7 +495,11 @@ h1 a{
 #page_main .info_big p{
     font-size: 1.6rem;
     line-height: 2.4rem}    
-    
+
+#list_projects li h4 span{
+    display: inline-block;
+    padding-right: 12px;
+}
 #list_projects li{
     width: 100%;
     margin: 0 auto;

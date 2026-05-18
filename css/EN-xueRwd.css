@@ -333,7 +333,7 @@ h1 a{
     width: 100%}
 
 #list_projects{
-    width: 80%;
+    width: 90%;
     padding-left: 0}        
 #list_projects li{
     width: 45%;
@@ -369,7 +369,7 @@ h1 a{
 手機(5"以上大螢幕) for-phone-only
 =====================================
 */
-@media (max-width: 420px) { /*360*/
+@media (max-width: 480px) { /*360*/
 header,
 #hdr-fixed{ height: 100px}
 #hdr-main{ padding-top: 10px}
@@ -382,8 +382,10 @@ h1 a{
     flex: 1;
     width: 240px;
     height: 60px;
-    background-size: 240px 60px;
-    background-position: center 7px}
+    background-size: contain;
+    background-position: center 7px;
+    margin-top: 8px;
+}
 #box_ban-left{
     width: 39px;
     height: 100px;} 

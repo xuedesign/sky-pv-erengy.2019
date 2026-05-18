@@ -509,8 +509,8 @@ h1 a{
 
 @media screen and (max-width: 420px) {
     .overlay nav .ilogo{ display: none}
-	.overlay nav {
-        /*height: 75%;*/}
+	  /*.overlay nav {
+        height: 75%;}*/
     .overlay ul li { height: 5%; min-height: 15px}
     .overlay ul li a {
         font-size: 1.5rem;

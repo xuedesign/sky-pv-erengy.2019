@@ -478,14 +478,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    width: 90%;
+    width: 100%;
     margin: 32px auto 0 auto;
     /*background: #e1e1e1*/
 }
 #list_projects li{
     display: block;
     width: 49%;
-    padding: 30px 0;
+    padding: 30px;
     margin-bottom: 50px;
 }
 #list_projects li:last-child{
@@ -499,7 +499,7 @@
     float: left;
     width: 200px;
     border: 1px solid #e1e1e1;
-    vertical-align: top;
+    /* vertical-align: top; */
 }
 #list_projects .list-left img{
     display: block;
@@ -513,8 +513,8 @@
     display: block;
     float: right;
     width: 55%;
-    /* padding-top: 20px */
-    vertical-align: middle;
+    /* padding-top: 20px 
+    vertical-align: middle;*/
 }
 #list_projects li h4{
     font-size: 2.5rem;
@@ -522,6 +522,15 @@
     line-height: 3.5rem;
     padding-bottom: 10px;
     color: rgba(36, 55, 136, .8)
+}
+#list_projects li h4 span{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #6592D5;
+    text-align: left;
+    padding-bottom: 4px;
 }
 #list_projects li h5{
     font-size: 2.8rem;
