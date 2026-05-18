@@ -9,48 +9,88 @@
 
 <url>
   <loc>https://www.spvenergy.com/</loc>
-  <lastmod>2019-06-13T14:20:30+00:00</lastmod>
+  <lastmod>2024-04-23T10:29:03+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.spvenergy.com/index</loc>
-  <lastmod>2019-06-13T14:20:30+00:00</lastmod>
+  <lastmod>2024-04-23T10:29:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.spvenergy.com/about</loc>
-  <lastmod>2019-06-13T14:20:30+00:00</lastmod>
+  <lastmod>2024-04-23T10:29:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.spvenergy.com/pv-advantage</loc>
-  <lastmod>2019-06-13T14:20:30+00:00</lastmod>
+  <lastmod>2024-04-23T10:29:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.spvenergy.com/projects</loc>
-  <lastmod>2019-06-13T14:20:30+00:00</lastmod>
+  <lastmod>2024-04-23T10:29:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.spvenergy.com/products</loc>
-  <lastmod>2019-06-13T13:24:30+00:00</lastmod>
+  <lastmod>2024-04-23T10:29:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.spvenergy.com/contacts</loc>
-  <lastmod>2019-06-13T14:20:30+00:00</lastmod>
+  <lastmod>2024-04-23T10:29:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.spvenergy.com/pv-system.html</loc>
-  <lastmod>2019-06-13T14:20:30+00:00</lastmod>
+  <loc>https://www.spvenergy.com/en/index</loc>
+  <lastmod>2024-04-23T10:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.spvenergy.com/en/about</loc>
+  <lastmod>2024-04-23T10:28:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.spvenergy.com/en/pv-advantage</loc>
+  <lastmod>2024-04-23T10:28:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.spvenergy.com/pv-system</loc>
+  <lastmod>2024-04-23T10:29:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.spvenergy.com/our-service</loc>
-  <lastmod>2019-06-13T14:20:30+00:00</lastmod>
+  <lastmod>2024-04-23T10:29:03+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.spvenergy.com/en/projects</loc>
+  <lastmod>2024-04-23T10:28:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.spvenergy.com/en/products</loc>
+  <lastmod>2024-04-23T10:28:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.spvenergy.com/en/contacts</loc>
+  <lastmod>2024-04-23T10:28:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.spvenergy.com/en/pv-system</loc>
+  <lastmod>2024-04-23T10:28:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.spvenergy.com/en/our-service</loc>
+  <lastmod>2024-04-23T10:28:47+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
