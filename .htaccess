@@ -1,23 +1,28 @@
 RewriteEngine on
 
-# One year for files (一天86400，一年31536000)
-<filesMatch ".(jpg|jpeg|png|gif|ico|webp|css|js)$">
-Header set Cache-Control "max-age=2592000, public"
-</filesMatch>
+# HTTP 強制導向 HTTPS（略過 cPanel / SSL 驗證檔）
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# One month for css and js
-<filesMatch ".(css|js)$">
-Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
-
-##Site for SSL
-# RewriteEngine On
-# RewriteCond %{HTTPS} !=on
-# RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
-# RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# hide.html
+# 隱藏 .html 副檔名（例：/about → /about.html）
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+<IfModule mod_headers.c>
+    # 圖片等靜態資源：30 天（2592000 秒，86400 × 30）
+    <FilesMatch "\.(jpg|jpeg|png|gif|ico|webp)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+
+    # CSS / JS：30 天
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+
+    # HSTS：1 年（31536000 秒）；preload 需先提交至 https://hstspreload.org
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
